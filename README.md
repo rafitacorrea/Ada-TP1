@@ -1,4 +1,3 @@
-le dijiste uwu a mi novia????
-ndeahhhhh
-PIO!
-Pedi ndeaah
+le dijiste uwu a mi novia????<br/>
+ndeahhhhh<br/>
+PIO!<br/>
