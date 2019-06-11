@@ -30,6 +30,10 @@ $highlight-section-color: #004A99;
     color: #283D50;
 }
 
+@mixin subtitle-font {
+    
+}
+
 @mixin services-card-style() {
     width: 300px;
     height: 200px;
