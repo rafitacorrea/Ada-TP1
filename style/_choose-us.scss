@@ -1,0 +1,15 @@
+.choose-us {
+  @include flex-column;
+  @include choose-us-highlight;
+  font-family: $main-font;
+  .choose-us-header {
+    @include flex-column;
+    justify-content: center;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
