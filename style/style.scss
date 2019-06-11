@@ -1,0 +1,18 @@
+@import "./_variables.scss";
+
+html, body {
+    display: flex;
+    background-color: $body-background-color;
+}
+
+.services-title {
+    font: 100% 'Montserrat', sans-serif;
+}
+
+.services-cards-container {
+    @include flex-row();
+}
+
+.services-card {
+    @include services-card-style();
+}

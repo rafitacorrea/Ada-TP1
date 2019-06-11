@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
+html, body {
+  display: flex;
+  background-color: #ecf5ff; }
+
+.services-title {
+  font: 100% 'Montserrat', sans-serif; }
+
+.services-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.services-card {
+  width: 300px;
+  height: 200px; }
