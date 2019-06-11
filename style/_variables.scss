@@ -31,7 +31,8 @@ $highlight-section-color: #004A99;
 }
 
 @mixin subtitle-font {
-    
+    font-family: 'Open Sans', sans-serif;
+    color: #556877;
 }
 
 @mixin services-card-style() {
