@@ -68,6 +68,79 @@ header{
         height:auto;
     }
 }
+// Testimonials
+.testimonials{
+    @include flex-column;
+    width:100%;
+    height:400px;
+    background-color:lighten($secondary-color,46%);
+    box-shadow:inset 0px 0px 20px 1px rgba(0,0,0,0.1);
+    h2{
+        font-family:$main-font;
+        font-weight:400;
+        font-size:36px;
+        color:$text-color;
+        margin-top:50px;
+    }
+    &-container{
+        width:700px;
+        height:200px;
+        overflow:hidden;
+        @include flex-row;
+    }
+    #testimonials-1, #testimonials-2, #testimonials-3, #testimonials-4, #testimonials-5{
+     @include flex-row;
+    }
+    &-text{
+        @include flex-column;
+        width:600px;
+        h3{
+            font-family:$main-font;
+            font-size:20px;
+            margin:0;
+            padding:0;
+            padding-bottom:5px;
+            align-self:flex-start;
+        }
+        h4{
+            font-family:$main-font;
+            font-size:14px;
+            color:#999999;
+            font-weight:200;
+            margin:0;
+            padding:0;
+            align-self:flex-start;
+        }
+        p{
+            font-family:$secondary-font;
+            font-size:16px;
+            font-style:italic;
+            color:$text-color;
+        }
+    }
+}
+.testimonials-image{
+    width:110px;
+    border:5px solid #fff;
+    border-radius:50%;
+    overflow:hidden;
+    margin-right:20px;
+    img{
+        width:100%;
+        height:auto;
+    }
+}
+.testimonials-dots{
+     @include flex-row;
+     width:100px;
+     margin-bottom:70px;
+}
+.testimonials-dots-link{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color:#cac9c9;
+}
 // Our clients
 .our-clients{
     @include flex-column;
