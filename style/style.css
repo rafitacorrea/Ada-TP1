@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
+.choose-us .choose-us-card-container .choose-us-card .far.fa-gem,
+.choose-us .choose-us-card-container .choose-us-card .fas.fa-language,
+.choose-us .choose-us-card-container .choose-us-card .far.fa-object-group {
+  font-size: 48px;
+  color: #bfddfe; }
+
 html {
   padding: 0;
   margin: 0; }
@@ -38,28 +44,46 @@ html {
     padding: 0 60px;
     margin: 20px; }
     .choose-us .choose-us-card-container .choose-us-card {
-      flex: 1;
-      background-color: #00458f;
-      border-radius: 10px;
-      padding: 15px 15px;
-      margin: 20px 20px;
-      height: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      font-family: "Open Sans", sans-serif;
-      text-align: center;
+      flex: 1;
+      max-width: 300px;
+      height: 100%;
+      padding: 15px 15px;
+      margin: 0 20px;
+      border-radius: 10px;
+      background-color: #00458f;
+      color: #fff;
       font-size: 15px;
-      color: #fff; }
-      .choose-us .choose-us-card-container .choose-us-card .far.fa-gem,
-      .choose-us .choose-us-card-container .choose-us-card .fas.fa-language,
-      .choose-us .choose-us-card-container .choose-us-card .far.fa-object-group {
-        font-size: 48px;
-        color: #bfddfe; }
+      font-family: "Open Sans", sans-serif;
+      text-align: center; }
       .choose-us .choose-us-card-container .choose-us-card h2 {
         font: "Montserrat", sans-serif; }
       .choose-us .choose-us-card-container .choose-us-card a {
         color: #fff;
         font-weight: 600;
         text-decoration: none; }
+  .choose-us .choose-us-counters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    flex: 1; }
+    .choose-us .choose-us-counters .counter-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column; }
+      .choose-us .choose-us-counters .counter-box .counter-number {
+        font-size: 48px;
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700; }
+      .choose-us .choose-us-counters .counter-box p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        color: #fff; }

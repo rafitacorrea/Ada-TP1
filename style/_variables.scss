@@ -13,8 +13,12 @@ $subtitle-color: #556877;
 $body-background-color: #ecf5ff;
 $header-background-color: #1445b3;
 $active-link-color: #007bff;
-$highlight-card-color: #003b7a;
+$highlight-card-color-active: #003b7a;
+$highlight-card-color: #00458f;
 $highlight-section-color: #004a99;
+$highlighted-font-color: #fff;
+$highlight-icons-color: #bfddfe;
+$counter-font-size: 48px;
 
 @mixin flex-row() {
   display: flex;
@@ -37,4 +41,9 @@ $highlight-section-color: #004a99;
 @mixin subtitle-font {
   font-family: "Open Sans", sans-serif;
   color: #556877;
+}
+
+%icons {
+  font-size: 48px;
+  color: $highlight-icons-color;
 }

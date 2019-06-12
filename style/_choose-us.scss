@@ -31,30 +31,51 @@ html {
     padding: 0 60px;
     margin: 20px;
     .choose-us-card {
-      flex: 1;
-      background-color: $highlight-card-color;
-      border-radius: 10px;
-      padding: 15px 15px;
-      margin: 20px 20px;
-      height: 100%;
       @include flex-column;
+      flex: 1;
+      max-width: 300px;
+      height: 100%;
+      padding: 15px 15px;
+      margin: 0 20px;
+      border-radius: 10px;
+      background-color: $highlight-card-color;
+      color: $highlighted-font-color;
+      font-size: $subtitle-font-size;
       font-family: $subtitle-font;
       text-align: center;
-      font-size: $subtitle-font-size;
-      color: #fff;
       .far.fa-gem,
       .fas.fa-language,
       .far.fa-object-group {
-        font-size: 48px;
-        color: #bfddfe;
+        @extend %icons;
       }
       h2 {
         font: $title-font;
       }
       a {
-        color: #fff;
+        color: $highlighted-font-color;
         font-weight: 600;
         text-decoration: none;
+      }
+    }
+  }
+  .choose-us-counters {
+    @include flex-row;
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+    flex: 1;
+    .counter-box {
+      @include flex-column;
+      .counter-number {
+        font-size: $counter-font-size;
+        color: $highlighted-font-color;
+        font-family: $title-font;
+        font-weight: 700;
+      }
+      p {
+        font-family: $title-font;
+        font-size: 14px;
+        color: $highlighted-font-color;
       }
     }
   }
