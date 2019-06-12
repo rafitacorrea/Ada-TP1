@@ -1,20 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
 
-$main-font: 'Montserrat', sans-serif;
-$secondary-font: 'Open Sans', sans-serif;
-$main-color: #1445B3;
-$secondary-color: #007bff;
+$title-font: "Montserrat", sans-serif;
+$title-title-size: 36px;
+$title-color: #283d50;
+$item-title-size: 18px;
+$item-title-description: 14px;
+$item-title-color: #283d50;
+$item-description-color: #444;
+$subtitle-font: "Open Sans", sans-serif;
+$subtitle-font-size: 15px;
+$subtitle-color: #556877;
+$body-background-color: #ecf5ff;
+$header-background-color: #1445b3;
+$active-link-color: #007bff;
+$highlight-card-color: #00458f;
+$highlight-card-color-hover: #003b7a;
+$highlight-section-color: #004a99;
 
-@mixin flex-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin flex-row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@mixin flex-column {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+@mixin flex-column() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin title-font {
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
+}
+
+@mixin subtitle-font {
+  font-family: "Open Sans", sans-serif;
+  color: #556877;
 }
