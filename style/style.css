@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
+html {
+  padding: 0;
+  margin: 0; }
+
+.choose-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #004a99; }
+  .choose-us .choose-us-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 10px 0; }
+    .choose-us .choose-us-header h1 {
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      color: #283d50;
+      color: #fff;
+      font-weight: 500; }
+    .choose-us .choose-us-header p {
+      font-size: 15px;
+      margin-top: 0;
+      font-family: "Open Sans", sans-serif;
+      color: #556877;
+      color: #fff;
+      width: 550px;
+      text-align: center; }
+  .choose-us .choose-us-card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin: 20px; }
+    .choose-us .choose-us-card-container .choose-us-card {
+      flex: 1;
+      background-color: #00458f;
+      border-radius: 10px;
+      padding: 15px 15px;
+      margin: 20px 20px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      font-size: 15px;
+      color: #fff; }
+      .choose-us .choose-us-card-container .choose-us-card .far.fa-gem,
+      .choose-us .choose-us-card-container .choose-us-card .fas.fa-language,
+      .choose-us .choose-us-card-container .choose-us-card .far.fa-object-group {
+        font-size: 48px;
+        color: #bfddfe; }
+      .choose-us .choose-us-card-container .choose-us-card h2 {
+        font: "Montserrat", sans-serif; }
+      .choose-us .choose-us-card-container .choose-us-card a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none; }

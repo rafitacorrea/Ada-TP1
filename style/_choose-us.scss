@@ -1,0 +1,61 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+.choose-us {
+  @include flex-column;
+  background-color: $highlight-section-color;
+  .choose-us-header {
+    @include flex-column;
+    justify-content: center;
+    margin: 0 0 10px 0;
+    h1 {
+      font-size: 36px;
+      @include title-font;
+      color: #fff;
+      font-weight: 500;
+    }
+    p {
+      font-size: 15px;
+      margin-top: 0;
+      @include subtitle-font;
+      color: #fff;
+      width: 550px;
+      text-align: center;
+    }
+  }
+  .choose-us-card-container {
+    @include flex-row;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin: 20px;
+    .choose-us-card {
+      flex: 1;
+      background-color: $highlight-card-color;
+      border-radius: 10px;
+      padding: 15px 15px;
+      margin: 20px 20px;
+      height: 100%;
+      @include flex-column;
+      font-family: $subtitle-font;
+      text-align: center;
+      font-size: $subtitle-font-size;
+      color: #fff;
+      .far.fa-gem,
+      .fas.fa-language,
+      .far.fa-object-group {
+        font-size: 48px;
+        color: #bfddfe;
+      }
+      h2 {
+        font: $title-font;
+      }
+      a {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
