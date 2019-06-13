@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
-.choose-us .choose-us-card-container .choose-us-card .far.fa-gem,
-.choose-us .choose-us-card-container .choose-us-card .fas.fa-language,
-.choose-us .choose-us-card-container .choose-us-card .far.fa-object-group {
+.choose-us .choose-us-card-container .choose-us-card .choose-us-card-content .far.fa-gem,
+.choose-us .choose-us-card-container .choose-us-card .choose-us-card-content .fas.fa-language,
+.choose-us .choose-us-card-container .choose-us-card .choose-us-card-content .far.fa-object-group {
   font-size: 48px;
   color: #bfddfe; }
 
-html {
+html,
+body {
   padding: 0;
   margin: 0; }
 
@@ -59,12 +60,16 @@ html {
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
       text-align: center; }
-      .choose-us .choose-us-card-container .choose-us-card h2 {
-        font: "Montserrat", sans-serif; }
-      .choose-us .choose-us-card-container .choose-us-card a {
-        color: #fff;
-        font-weight: 600;
-        text-decoration: none; }
+      .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content {
+        padding-top: 20px; }
+        .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content h2 {
+          font: "Montserrat", sans-serif; }
+      .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore {
+        padding-bottom: 20px; }
+        .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a {
+          color: #fff;
+          font-weight: 600;
+          text-decoration: none; }
   .choose-us .choose-us-counters {
     display: flex;
     justify-content: space-between;
