@@ -59,7 +59,12 @@ body {
       color: #fff;
       font-size: 15px;
       font-family: "Open Sans", sans-serif;
-      text-align: center; }
+      text-align: center;
+      transition: 0.5s; }
+      .choose-us .choose-us-card-container .choose-us-card:hover {
+        background-color: #003b7a; }
+        .choose-us .choose-us-card-container .choose-us-card:hover a {
+          border-bottom: 1px solid #00458f; }
       .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content {
         padding-top: 20px; }
         .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content h2 {
@@ -70,6 +75,8 @@ body {
           color: #fff;
           font-weight: 600;
           text-decoration: none; }
+          .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a:hover {
+            border-bottom: 2px solid #fff; }
   .choose-us .choose-us-counters {
     display: flex;
     justify-content: space-between;
