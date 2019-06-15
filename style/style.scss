@@ -5,7 +5,24 @@ scroll-behavior: smooth;
 body{
     margin:0;
 }
+// Arrow
+.arrow{
+    @include flex-row;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background-color:$secondary-color;
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    z-index:1;
+}
+.fa-arrow-up{
+    font-size:25px;
+    color:#fff;
+    margin:0 auto;
 
+}
 // Header
 header{
     @include flex-row;
@@ -136,7 +153,6 @@ header{
     border-radius: 50%;
     z-index: 10;
     background-color:#999;
-    // outline: 6px solid #ccc;
     outline-offset: -6px;
     cursor: pointer;
     -webkit-appearance: none;
@@ -161,6 +177,9 @@ header{
   }
   .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
     left: -300%;
+  }
+  .slider__nav:checked:nth-of-type(5) ~ .slider__inner {
+    left: -400%;
   }
   .slider__inner {
     position: absolute;
