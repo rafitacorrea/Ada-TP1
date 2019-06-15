@@ -55,6 +55,34 @@ header {
 .header-image {
   flex: 1;
   margin-right: 100px; }
+  .header-image-mobile {
+    flex: 1;
+    display: none; }
   .header-image img {
     width: 100%;
     height: auto; }
+
+@media (max-width: 980px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+  .header-image {
+    display: none; }
+    .header-image-mobile {
+      display: block;
+      width: 60%; }
+      .header-image-mobile img {
+        width: 100%;
+        height: auto; }
+  .header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0; }
+    .header-text h1 {
+      margin: 0; }
+  .buttons {
+    margin-bottom: 80px; } }
