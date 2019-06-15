@@ -6,15 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Trabajo práctico - Ada 01</title>
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   </head>
   <body>
-    <!-- Nav - Lore -->
-    <nav>
-      <div class="logo">[LOGO]</div>
-      <div class="menu"></div>
-    </nav>
-    <!--Header -  Rafa-->
-    <header>
+<!-- Nav -->
+    <nav></nav>
+<!--Header -->
+    <header id="header">
       <div class="header-text">
           <h1>We provide</h1> 
           <h1 class="solutions">solutions</h1> 
@@ -28,81 +26,73 @@
         <img src="./img/intro-img.svg"/>
       </div>
     </header>
-    <!--About us - Lore -->
-    <div class="about-us"></div>
-    <!-- Services - Kari -->
+<!--About us  -->
+    <div id="about-us" class="about-us"></div>
+<!-- Services -->
     <div class="services"></div>
-    <!-- Choose Us - Kim -->
+<!-- Choose Us  -->
     <div class="choose-us"></div>
-    <!-- Portfolio - Kim -->
+<!-- Portfolio -->
     <div class="portfolio"></div>
-    <!-- Testimonials - Rafa -->
+<!-- Testimonials  -->
     <div class="testimonials">
       <h2>Testimonials</h2>
-      <div class="testimonials-container">
-        <div id="testimonials-1">
-          <div class="testimonials-image">
-            <img src="./img/testimonial-1.jpg" alt="Testimonials image"/>
-          </div>
-          <div class="testimonials-text">
-            <h3>Saul Goodman</h3>
-          <h4>Ceo & Founder</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga ut, adipisci possimus magni est deleniti, consequatur rerum eum ad soluta quidem debitis minus expedita omnis! Tempore ducimus reprehenderit consectetur?</p>
-          </div>
-        </div>
-        <div id="testimonials-2">
-          <div class="testimonials-image">
-            <img src="./img/testimonial-2.jpg" alt="Testimonials image"/>
-          </div>
-          <div class="testimonials-text">
-            <h3>Sara Wilson</h3>
-            <h4>Designer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga ut, adipisci possimus magni est deleniti, consequatur rerum eum ad soluta quidem debitis minus expedita omnis! Tempore ducimus reprehenderit consectetur?</p>
-          </div>
-        </div>
-        <div id="testimonials-3">
-          <div class="testimonials-image">
-            <img src="./img/testimonial-3.jpg" alt="Testimonials image"/>
-          </div>
-          <div class="testimonials-text">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga ut, adipisci possimus magni est deleniti, consequatur rerum eum ad soluta quidem debitis minus expedita omnis! Tempore ducimus reprehenderit consectetur?</p>
-          </div>
-        </div>
-        <div id="testimonials-4">
-          <div class="testimonials-image">
-            <img src="./img/testimonial-4.jpg" alt="Testimonials image"/>
-          </div>
-          <div class="testimonials-text">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga ut, adipisci possimus magni est deleniti, consequatur rerum eum ad soluta quidem debitis minus expedita omnis! Tempore ducimus reprehenderit consectetur?</p>
-          </div>
-        </div>
-        <div id="testimonials-5">
-          <div class="testimonials-image">
-            <img src="./img/testimonial-5.jpg" alt="Testimonials image"/>
-          </div>
-          <div class="testimonials-text">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi fuga ut, adipisci possimus magni est deleniti, consequatur rerum eum ad soluta quidem debitis minus expedita omnis! Tempore ducimus reprehenderit consectetur?</p>
-          </div>
+      
+<div class="slider">
+    <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+    <input type="radio" name="slider" title="slide5" class="slider__nav"/>
+    <div class="slider__inner">
+      <div class="slider__contents">
+        <div class="testimonials-image"><img src="./img/testimonial-1.jpg"/></div>
+        <div class="testimonials-text">
+        <h3 class="slider__caption">Saul Goodman</h3>
+        <h4 class="slider__caption">Ceo & Founder</h4>
+        <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+      </div>
+      </div>
+      <div class="slider__contents">
+        <div class="testimonials-image">  <img src="./img/testimonial-2.jpg"/></div>
+        <div class="testimonials-text">
+        <h3 class="slider__caption">Sara Wilson</h3>
+        <h4 class="slider__caption">Designer</h4>
+        <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
         </div>
       </div>
-      <div class="testimonials-dots">
-        <a href="#testimonials-1"><div class="testimonials-dots-link"></div></a>
-        <a href="#testimonials-2"><div class="testimonials-dots-link"></div></a>
-        <a href="#testimonials-3"><div class="testimonials-dots-link"></div></a>
-        <a href="#testimonials-4"><div class="testimonials-dots-link"></div></a>
-        <a href="#testimonials-5"><div class="testimonials-dots-link"></div></a>
+      <div class="slider__contents">
+        <div class="testimonials-image">  <img src="./img/testimonial-3.jpg"/></div>
+        <div class="testimonials-text">
+        <h3 class="slider__caption">Jena Karlis</h3>
+        <h4 class="slider__caption">Store Owner</h4>
+        <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+        </div>
       </div>
+      <div class="slider__contents">
+        <div class="testimonials-image">  <img src="./img/testimonial-4.jpg"/></div>
+        <div class="testimonials-text">
+        <h3 class="slider__caption">Matt Brandon</h3>
+        <h4 class="slider__caption">Freelancer</h4>
+        <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+        </div>
+      </div>
+      <div class="slider__contents">
+        <div class="testimonials-image">  <img src="./img/testimonial-5.jpg"/></div>
+        <div class="testimonials-text">
+          <h3 class="slider__caption">John Larson</h3>
+          <h4 class="slider__caption">Entrepreneur</h4>
+          <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+          </div>
+        </div>
     </div>
-    <!-- Team - Kim -->
+  </div>
+
+    </div>
+<!-- Team  -->
     <div class="team"></div>
-    <!-- Our Clients -  Rafa -->
-    <div class="our-clients">
+<!-- Our Clients  -->
+    <div id="our-clients" class="our-clients">
       <div class="our-clients-text">
           <h2>Our Clients</h2>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
@@ -134,9 +124,9 @@
         </div>
       </div>
     </div>
-    <!-- Contct Us -  Kari -->
+<!-- Contact Us -->
     <div class="contact-us"></div>
-    <!-- Footer - Lore -->
+<!-- Footer  -->
     <footer></footer>
   </body>
 </html>

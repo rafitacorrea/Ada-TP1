@@ -1,7 +1,11 @@
 @import "./variables";
+html{
+scroll-behavior: smooth;
+}
 body{
     margin:0;
 }
+
 // Header
 header{
     @include flex-row;
@@ -22,7 +26,7 @@ header{
         color:#fff;
     }
     .solutions{
-        color:$secondary-color;
+        color:lighten($secondary-color,20%);
         text-decoration:underline;
     }
 }
@@ -68,6 +72,7 @@ header{
         height:auto;
     }
 }
+
 // Testimonials
 .testimonials{
     @include flex-column;
@@ -82,64 +87,139 @@ header{
         color:$text-color;
         margin-top:50px;
     }
-    &-container{
-        width:700px;
-        height:200px;
-        overflow:hidden;
-        @include flex-row;
-    }
-    #testimonials-1, #testimonials-2, #testimonials-3, #testimonials-4, #testimonials-5{
-     @include flex-row;
-    }
-    &-text{
-        @include flex-column;
-        width:600px;
-        h3{
-            font-family:$main-font;
-            font-size:20px;
-            margin:0;
-            padding:0;
-            padding-bottom:5px;
-            align-self:flex-start;
-        }
-        h4{
-            font-family:$main-font;
-            font-size:14px;
-            color:#999999;
-            font-weight:200;
-            margin:0;
-            padding:0;
-            align-self:flex-start;
-        }
-        p{
-            font-family:$secondary-font;
-            font-size:16px;
-            font-style:italic;
-            color:$text-color;
-        }
-    }
+
 }
 .testimonials-image{
     width:110px;
-    border:5px solid #fff;
-    border-radius:50%;
-    overflow:hidden;
-    margin-right:20px;
-    img{
-        width:100%;
-        height:auto;
+     height:110px;
+     border-radius:50%;
+     border:5px solid #fff;
+     overflow:hidden;
+     margin-right:20px;
+     img{
+         width:100%;
+         height:100%;
+     }
+}
+.testimonials-text{
+    @include flex-column;
+    width:600px;
+}
+.slider {
+    margin:0;
+    margin-bottom:50px;
+    padding:0;
+    width:700px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider__nav {
+    width: 12px;
+    height: 12px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    background-color:#999;
+    // outline: 6px solid #ccc;
+    outline-offset: -6px;
+    cursor: pointer;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+  }
+  .slider__nav:checked {
+    -webkit-animation: check 0.4s linear forwards;
+            animation: check 0.4s linear forwards;
+  }
+  .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+  }
+  .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+  }
+  .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -200%;
+  }
+  .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+    left: -300%;
+  }
+  .slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  .slider__contents {
+      width:700px;
+    @include flex-row;
+    padding-bottom:30px;
+    h3{
+        font-size:20px;
     }
-}
-.testimonials-dots{
-     @include flex-row;
-     width:100px;
-     margin-bottom:70px;
-}
-.testimonials-dots-link{
-    width:12px;
-    height:12px;
-    border-radius:50%;
-    background-color:#cac9c9;
+    h4{
+        font-size:14px;
+        color:#999999;
+        font-weight:200;
+    }
+  }
+ 
+  .slider__caption {
+      align-self:flex-start;
+      font-family:$main-font;
+      margin:0;
+      padding:0;
+
+  }
+  .slider__txt {
+
+    font-style:italic;
+    font-family:$secondary-font;
+    font-size:16px;
+
+  }
+  
+  @keyframes check {
+    50% {
+      background-color: $secondary-color;
+    }
+    100% {
+      background-color: $secondary-color;
+    }
+  }
+  
+// Team
+.team{
+    width:100%;
+    height:600px;
 }
 // Our clients
 .our-clients{
@@ -192,4 +272,3 @@ header{
         }
     }
 }
-
