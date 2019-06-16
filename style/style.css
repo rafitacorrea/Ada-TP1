@@ -101,6 +101,7 @@ body {
         color: #fff; }
 
 .portfolio {
+  background: #ecf5ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -137,86 +138,193 @@ body {
         .portfolio .portfolio-header .portfolio-filter ul li:hover, .portfolio .portfolio-header .portfolio-filter ul li:active {
           background-color: #007bff;
           color: #fff; }
-  .portfolio .portfolio-gallery {
-    margin: 60px;
-    width: 1140px; }
-    .portfolio .portfolio-gallery .portfolio-items-container {
+
+.portfolio-gallery {
+  margin: 60px;
+  width: 1140px; }
+  .portfolio-gallery .portfolio-items-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .portfolio-gallery .portfolio-items-container .portfolio-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap; }
-      .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        height: 250px;
-        width: 350px;
-        border-radius: 6px;
-        margin-bottom: 30px; }
-        .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image {
+      flex-direction: column;
+      height: 250px;
+      width: 350px;
+      border-radius: 6px;
+      margin-bottom: 30px; }
+      .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        transition: 0.1s; }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image:hover .portfolio-item-hover {
+          opacity: 1; }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .image {
           height: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 6px; }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app1 {
+          background-image: url(../media/portfolio/app1.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web3 {
+          background-image: url(../media/portfolio/web3.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app2 {
+          background-image: url(../media/portfolio/app2.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card2 {
+          background-image: url(../media/portfolio/card2.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web2 {
+          background-image: url(../media/portfolio/web2.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app3 {
+          background-image: url(../media/portfolio/app3.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card1 {
+          background-image: url(../media/portfolio/card1.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card3 {
+          background-image: url(../media/portfolio/card3.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web1 {
+          background-image: url(../media/portfolio/web1.jpg); }
+        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
           width: 100%;
-          position: relative;
-          overflow: hidden;
-          transition: 0.1s; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image:hover .portfolio-item-hover {
-            opacity: 1; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .image {
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 6px; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app1 {
-            background-image: url(../media/portfolio/app1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web3 {
-            background-image: url(../media/portfolio/web3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app2 {
-            background-image: url(../media/portfolio/app2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card2 {
-            background-image: url(../media/portfolio/card2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web2 {
-            background-image: url(../media/portfolio/web2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app3 {
-            background-image: url(../media/portfolio/app3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card1 {
-            background-image: url(../media/portfolio/card1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card3 {
-            background-image: url(../media/portfolio/card3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web1 {
-            background-image: url(../media/portfolio/web1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            justify-content: center;
-            position: absolute;
-            background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
-            transition: 0.5s; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover .portfolio-item-hover-links ion-icon {
-              padding: 6px;
-              font-size: 20px;
-              background-color: #007bff;
+          height: 100%;
+          opacity: 0;
+          justify-content: center;
+          position: absolute;
+          background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
+          transition: 0.5s; }
+          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover .portfolio-item-hover-links ion-icon {
+            padding: 6px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 100%;
+            margin: 10px 5px; }
+          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 {
+            font-family: "Montserrat", sans-serif;
+            color: #283d50;
+            color: #fff;
+            font-size: 22px;
+            margin: 0; }
+            .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a {
               color: #fff;
-              border-radius: 100%;
-              margin: 10px 5px; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 {
-              font-family: "Montserrat", sans-serif;
-              color: #283d50;
-              color: #fff;
-              font-size: 22px;
-              margin: 0; }
-              .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a {
-                color: #fff;
-                text-decoration: none; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover p {
-              font-family: "Open Sans", sans-serif;
-              color: #556877;
-              color: #fff;
-              font-size: 14px;
-              margin: 0; }
+              text-decoration: none; }
+              .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a:hover {
+                color: #007bff; }
+          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover p {
+            font-family: "Open Sans", sans-serif;
+            color: #556877;
+            color: #fff;
+            font-size: 14px;
+            margin: 0; }
+
+.team {
+  background: #ecf5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .team .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 10px 0; }
+    .team .team-header h1 {
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      color: #283d50;
+      font-weight: 500; }
+    .team .team-header p {
+      font-size: 15px;
+      margin-top: 0;
+      font-family: "Open Sans", sans-serif;
+      color: #556877;
+      width: 550px;
+      text-align: center; }
+
+.team-list .team-profiles-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1140px; }
+  .team-list .team-profiles-container .team-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 225px;
+    width: 225px;
+    border-radius: 6px;
+    margin: 30px; }
+    .team-list .team-profiles-container .team-profile .team-profile-image {
+      height: 100%;
+      width: 100%;
+      position: relative; }
+      .team-list .team-profiles-container .team-profile .team-profile-image .image {
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 6px;
+        border-radius: 100%;
+        overflow: hidden;
+        transition: 0.1s; }
+        .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover {
+          opacity: 1; }
+        .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover-content {
+          top: 0;
+          opacity: 1; }
+      .team-list .team-profiles-container .team-profile .team-profile-image .profile1 {
+        background-image: url(../media/team/team-01.jpg); }
+      .team-list .team-profiles-container .team-profile .team-profile-image .profile2 {
+        background-image: url(../media/team/team-02.jpg); }
+      .team-list .team-profiles-container .team-profile .team-profile-image .profile3 {
+        background-image: url(../media/team/team-03.jpg); }
+      .team-list .team-profiles-container .team-profile .team-profile-image .profile4 {
+        background-image: url(../media/team/team-04.jpg); }
+      .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
+        transition: 0.3s ease-out; }
+        .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50px;
+          opacity: 0;
+          transition: 0.3s ease-out; }
+          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content h4 {
+            font-family: "Montserrat", sans-serif;
+            color: #283d50;
+            color: #fff;
+            font-size: 18px;
+            margin: 0; }
+          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content p {
+            font-family: "Open Sans", sans-serif;
+            color: #556877;
+            color: #fff;
+            font-style: italic;
+            font-size: 14px;
+            margin: 0; }
+          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content .team-profile-hover-links i {
+            padding: 6px;
+            font-size: 14px;
+            color: #fff;
+            top: 250px; }
