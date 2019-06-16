@@ -14,6 +14,7 @@ $body-background-color: #ecf5ff;
 $header-background-color: #1445b3;
 $active-link-color: #007bff;
 $highlight-card-color-active: #003b7a;
+$portfolio-hover: rgba(0, 59, 122, 0.5);
 $highlight-card-color: #00458f;
 $highlight-section-color: #004a99;
 $highlighted-font-color: #fff;
@@ -41,6 +42,17 @@ $counter-font-size: 48px;
 @mixin subtitle-font {
   font-family: "Open Sans", sans-serif;
   color: #556877;
+}
+
+@mixin portfolio-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 250px;
 }
 
 %icons {

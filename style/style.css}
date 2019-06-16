@@ -139,84 +139,15 @@ body {
           color: #fff; }
   .portfolio .portfolio-gallery {
     margin: 60px;
-    width: 1140px; }
+    width: 1000px; }
     .portfolio .portfolio-gallery .portfolio-items-container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap; }
+      align-items: center; }
       .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         height: 250px;
-        width: 350px;
-        border-radius: 6px;
-        margin-bottom: 30px; }
-        .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image {
-          height: 100%;
-          width: 100%;
-          position: relative;
-          overflow: hidden;
-          transition: 0.1s; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image:hover .portfolio-item-hover {
-            opacity: 1; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .image {
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            border-radius: 6px; }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app1 {
-            background-image: url(../media/portfolio/app1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web3 {
-            background-image: url(../media/portfolio/web3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app2 {
-            background-image: url(../media/portfolio/app2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card2 {
-            background-image: url(../media/portfolio/card2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web2 {
-            background-image: url(../media/portfolio/web2.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app3 {
-            background-image: url(../media/portfolio/app3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card1 {
-            background-image: url(../media/portfolio/card1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card3 {
-            background-image: url(../media/portfolio/card3.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web1 {
-            background-image: url(../media/portfolio/web1.jpg); }
-          .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            justify-content: center;
-            position: absolute;
-            background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
-            transition: 0.5s; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover .portfolio-item-hover-links ion-icon {
-              padding: 6px;
-              font-size: 20px;
-              background-color: #007bff;
-              color: #fff;
-              border-radius: 100%;
-              margin: 10px 5px; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 {
-              font-family: "Montserrat", sans-serif;
-              color: #283d50;
-              color: #fff;
-              font-size: 22px;
-              margin: 0; }
-              .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a {
-                color: #fff;
-                text-decoration: none; }
-            .portfolio .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover p {
-              font-family: "Open Sans", sans-serif;
-              color: #556877;
-              color: #fff;
-              font-size: 14px;
-              margin: 0; }
+        width: 320px; }
