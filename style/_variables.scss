@@ -21,6 +21,12 @@ $highlighted-font-color: #fff;
 $highlight-icons-color: #bfddfe;
 $counter-font-size: 48px;
 
+$main-font: "Montserrat", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
+$main-color: #1445b3;
+$secondary-color: #007bff;
+$text-color: #283d50;
+
 @mixin flex-row() {
   display: flex;
   justify-content: space-between;
