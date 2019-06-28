@@ -1,18 +1,69 @@
 @import "./_variables.scss";
 
+@mixin cards-divs {
+    height: 500px;
+    width: 300px;
+}
+
+@mixin services-icon-container {
+    height: 200px;
+    width: 200px;
+}
+
+@mixin services-img {
+    height: auto;
+    width: 100%;
+}
+
 html, body {
-    display: flex;
     background-color: $body-background-color;
 }
 
-.services-title {
-    font: 100% 'Montserrat', sans-serif;
+.services {
+    @include flex-column();
+
+        & .services-title {
+            font: 100% 'Montserrat', sans-serif;
+            font-size: $title-title-size;
+            text-align: center;
+        }
+        
+        & .services-description {
+            font-size: $subtitle-font-size;
+            font: 100% 'Open Sans', sans-serif;
+            text-align: center;
+            color: $subtitle-color;
+        }
 }
 
 .services-cards-container {
     @include flex-row();
+    width: 900px;
+    height: auto;
+
+    & .services-card {
+        border-radius: 5%;
+        background-color: #ffffff;
+        height: 50%;
+        width: 700px;
+        margin: 2%;
+    }
 }
 
-.services-card {
-    @include services-card-style();
+
+.services-icon-container {
+    @include services-icon-container();
+}
+
+.services-icon-container img {
+    height: auto;
+    width: 100%;
+}
+
+.card-title {
+    font: 100% 'Montserrat', sans-serif;
+}
+
+.card-description {
+    font: 100% 'Open Sans', sans-serif;
 }

@@ -1,16 +1,45 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
 html, body {
-  display: flex;
   background-color: #ecf5ff; }
 
-.services-title {
-  font: 100% 'Montserrat', sans-serif; }
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .services .services-title {
+    font: 100% 'Montserrat', sans-serif;
+    font-size: 36px;
+    text-align: center; }
+  .services .services-description {
+    font-size: 15px;
+    font: 100% 'Open Sans', sans-serif;
+    text-align: center;
+    color: #556877; }
 
 .services-cards-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 900px;
+  height: auto; }
+  .services-cards-container .services-card {
+    border-radius: 5%;
+    background-color: #ffffff;
+    height: 50%;
+    width: 700px;
+    margin: 2%; }
 
-.services-card {
-  width: 300px;
-  height: 200px; }
+.services-icon-container {
+  height: 200px;
+  width: 200px; }
+
+.services-icon-container img {
+  height: auto;
+  width: 100%; }
+
+.card-title {
+  font: 100% 'Montserrat', sans-serif; }
+
+.card-description {
+  font: 100% 'Open Sans', sans-serif; }
