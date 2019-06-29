@@ -265,7 +265,7 @@ body {
 
 @media (max-width: 360px) {
   .slider {
-    width: 90%;
+    width: 360px;
     height: 400px;
     margin-bottom: 50px; }
   .slider__contents {
@@ -274,13 +274,14 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
-    width: 320px; }
+    box-sizing: border-box; }
     .slider__contents .testimonials-image {
       width: 110px;
       height: 110px;
       border-radius: 50%;
       border: 5px solid #fff;
-      overflow: hidden; }
+      overflow: hidden;
+      margin-right: 0; }
       .slider__contents .testimonials-image img {
         width: 100%;
         height: 100%; }
@@ -289,9 +290,9 @@ body {
   .slider__txt {
     margin-bottom: 30px;
     text-align: center;
-    width: 320px; }
+    padding: 0 10px; }
   .testimonials-text {
-    width: 320px; } }
+    width: 360px; } }
 
 .our-clients-container {
   display: flex;
