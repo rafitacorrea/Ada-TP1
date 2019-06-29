@@ -1,37 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Trabajo práctico - Ada 01</title>
-    <link rel="stylesheet" href="./style/style.css" />
-  </head>
-  <body>
-    <!-- Nav - Lore -->
-    <nav>
-      <div class="logo">[LOGO]</div>
-      <div class="menu"></div>
-    </nav>
-    <!--Header -  Rafa-->
-    <header></header>
-    <!--About us - Lore -->
-    <div class="about-us"></div>
-    <!-- Services - Kari -->
-    <div class="services"></div>
-    <!-- Choose Us - Kim -->
-    <div class="choose-us"></div>
-    <!-- Portfolio - Kim -->
-    <div class="portfolio"></div>
-    <!-- Testimonials - Rafa -->
-    <div class="testimonials"></div>
-    <!-- Team - Kim -->
-    <div class="team"></div>
-    <!-- Our Clients -  Rafa -->
-    <div class="our-clients"></div>
-    <!-- Contct Us -  Kari -->
-    <div class="contact-us"></div>
-    <!-- Footer - Lore -->
-    <footer></footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ada Trabajo Practico 1</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-banner">
+                <div class="header-image-mobile">
+                    <img src="./img/intro-img.svg" alt="Imagen de personas construyendo una pagina web"/>
+                  </div>
+                <div class="header-info-text">
+                    <h2 class="header-text">We provide <br><span class="header-text-highlight">solutions</span><br>for your business!</h2>
+                    <div class="header-buttons">
+                        <a class="header-button-started">Get Started</a>
+                        <a class="header-button-services">Our Services</a>
+                    </div>
+                </div>
+                <div class="header-image">
+                    <img src="img/intro-img.svg" alt="Imagen de personas construyendo una pagina web"/>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Testimonials  -->
+<div class="testimonials-container">
+  <div class="testimonials">
+      <h3>Testimonials</h3>   
+<div class="slider">
+  <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide2" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide3" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide4" class="slider__nav"/>
+  <input type="radio" name="slider" title="slide5" class="slider__nav"/>
+  <div class="slider__inner">
+    <div class="slider__contents">
+      <div class="testimonials-image"><img src="./img/testimonial-1.jpg"/></div>
+      <div class="testimonials-text">
+      <h4 class="slider__caption">Saul Goodman</h4>
+      <h5 class="slider__caption">Ceo & Founder</h5>
+      <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+    </div>
+    </div>
+    <div class="slider__contents">
+      <div class="testimonials-image">  <img src="./img/testimonial-2.jpg"/></div>
+      <div class="testimonials-text">
+      <h4 class="slider__caption">Sara Wilson</h4>
+      <h5 class="slider__caption">Designer</h5>
+      <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+      </div>
+    </div>
+    <div class="slider__contents">
+      <div class="testimonials-image">  <img src="./img/testimonial-3.jpg"/></div>
+      <div class="testimonials-text">
+      <h4 class="slider__caption">Jena Karlis</h4>
+      <h5 class="slider__caption">Store Owner</h5>
+      <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+      </div>
+    </div>
+    <div class="slider__contents">
+      <div class="testimonials-image">  <img src="./img/testimonial-4.jpg"/></div>
+      <div class="testimonials-text">
+      <h4 class="slider__caption">Matt Brandon</h4>
+      <h5 class="slider__caption">Freelancer</h5>
+      <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+      </div>
+    </div>
+    <div class="slider__contents">
+      <div class="testimonials-image">  <img src="./img/testimonial-5.jpg"/></div>
+      <div class="testimonials-text">
+        <h4 class="slider__caption">John Larson</h4>
+        <h5 class="slider__caption">Entrepreneur</h5>
+        <p class="slider__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officia enim nam voluptatem maxime iusto animi. Enim, eos sunt. Quam similique dolorem inventore provident aliquid, voluptatum praesentium </p>
+        </div>
+      </div>
+  </div>
+</div>
+  </div>
+</div>
+<!-- Our clients -->
+<div class="our-clients-container">
+  <div class="our-clients">
+    <div class="our-clients-text">
+        <h3>Our Clients</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere santome nida.</p>
+    </div>
+    <div class="clients-1">
+      <div class="clients-container">
+        <img src="img/client-1.png" alt="Logo Myob"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-2.png" alt="Logo Belimo"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-3.png" alt="Logo LifeGroups"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-4.png" alt="Logo Lilly"/>
+      </div>
+    </div>
+  <div class="clients-2">
+      <div class="clients-container">
+        <img src="img/client-5.png" alt="Logo Citrus"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-6.png" alt="Logo Trustly"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-7.png" alt="Logo Oldendorff"/>
+      </div>
+      <div class="clients-container">
+        <img src="img/client-8.png" alt="Logo Grabyo"/>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>
