@@ -12,323 +12,417 @@ body {
   margin: 0; }
 
 .choose-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   background-color: #004a99; }
-  .choose-us .choose-us-header {
+  .choose-us .choose-us-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 0 10px 0; }
-    .choose-us .choose-us-header h1 {
-      font-size: 36px;
-      font-family: "Montserrat", sans-serif;
-      color: #283d50;
-      color: #fff;
-      font-weight: 500; }
-    .choose-us .choose-us-header p {
-      font-size: 15px;
-      margin-top: 0;
-      font-family: "Open Sans", sans-serif;
-      color: #556877;
-      color: #fff;
-      width: 550px;
-      text-align: center; }
-  .choose-us .choose-us-card-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 60px;
-    margin: 20px; }
-    .choose-us .choose-us-card-container .choose-us-card {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .choose-us .choose-us-container .choose-us-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      flex: 1;
-      max-width: 300px;
-      height: 100%;
-      padding: 15px 15px;
-      margin: 0 20px;
-      border-radius: 10px;
-      background-color: #00458f;
-      color: #fff;
-      font-size: 15px;
-      font-family: "Open Sans", sans-serif;
-      text-align: center;
-      transition: 0.5s; }
-      .choose-us .choose-us-card-container .choose-us-card:hover {
-        background-color: #003b7a; }
-        .choose-us .choose-us-card-container .choose-us-card:hover a {
-          border-bottom: 1px solid #00458f; }
-      .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content {
-        padding-top: 20px; }
-        .choose-us .choose-us-card-container .choose-us-card .choose-us-card-content h2 {
-          font: "Montserrat", sans-serif; }
-      .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore {
-        padding-bottom: 20px; }
-        .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a {
-          color: #fff;
-          font-weight: 600;
-          text-decoration: none; }
-          .choose-us .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a:hover {
-            border-bottom: 2px solid #fff; }
-  .choose-us .choose-us-counters {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 900px;
-    margin: 0 auto;
-    padding: 60px;
-    flex: 1; }
-    .choose-us .choose-us-counters .counter-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column; }
-      .choose-us .choose-us-counters .counter-box .counter-number {
-        font-size: 48px;
-        color: #fff;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700; }
-      .choose-us .choose-us-counters .counter-box p {
-        font-family: "Montserrat", sans-serif;
-        font-size: 14px;
-        color: #fff; }
-
-.portfolio {
-  background: #ecf5ff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  background-color: body-background-color; }
-  .portfolio .portfolio-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 0 10px 0; }
-    .portfolio .portfolio-header h1 {
-      font-size: 36px;
-      font-family: "Montserrat", sans-serif;
-      color: #283d50;
-      font-weight: 500;
-      margin-bottom: 0; }
-    .portfolio .portfolio-header .portfolio-filter ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       justify-content: center;
-      padding-left: 0; }
-      .portfolio .portfolio-header .portfolio-filter ul li {
+      margin: 0 0 10px 0; }
+      .choose-us .choose-us-container .choose-us-header h1 {
+        font-size: 36px;
+        font-family: "Montserrat", sans-serif;
+        color: #283d50;
+        color: #fff;
+        font-weight: 500; }
+      .choose-us .choose-us-container .choose-us-header p {
+        font-size: 15px;
+        margin-top: 0;
         font-family: "Open Sans", sans-serif;
-        list-style: none;
-        background-color: #bfddfe;
-        color: #007bff;
-        margin: 20px 15px 20px 15px;
-        border-radius: 50px;
-        padding: 6px 20px;
-        font-size: 12px; }
-        .portfolio .portfolio-header .portfolio-filter ul li:hover, .portfolio .portfolio-header .portfolio-filter ul li:active {
-          background-color: #007bff;
+        color: #556877;
+        color: #fff;
+        width: 550px;
+        text-align: center; }
+    .choose-us .choose-us-container .choose-us-card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 60px;
+      margin: 20px; }
+      .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        flex: 1;
+        max-width: 30%;
+        height: 100%;
+        padding: 15px 15px;
+        margin: 1.5%;
+        border-radius: 10px;
+        background-color: #00458f;
+        color: #fff;
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        transition: 0.5s; }
+        .choose-us .choose-us-container .choose-us-card-container .choose-us-card:hover {
+          background-color: #003b7a; }
+          .choose-us .choose-us-container .choose-us-card-container .choose-us-card:hover a {
+            border-bottom: 1px solid #00458f; }
+        .choose-us .choose-us-container .choose-us-card-container .choose-us-card .choose-us-card-content {
+          padding-top: 20px; }
+          .choose-us .choose-us-container .choose-us-card-container .choose-us-card .choose-us-card-content h2 {
+            font: "Montserrat", sans-serif; }
+        .choose-us .choose-us-container .choose-us-card-container .choose-us-card .choose-us-card-link .readmore {
+          padding-bottom: 20px; }
+          .choose-us .choose-us-container .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none; }
+            .choose-us .choose-us-container .choose-us-card-container .choose-us-card .choose-us-card-link .readmore a:hover {
+              border-bottom: 2px solid #fff; }
+    .choose-us .choose-us-container .choose-us-counters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px;
+      flex: 1; }
+      .choose-us .choose-us-container .choose-us-counters .counter-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column; }
+        .choose-us .choose-us-container .choose-us-counters .counter-box .counter-number {
+          font-size: 48px;
+          color: #fff;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700; }
+        .choose-us .choose-us-container .choose-us-counters .counter-box p {
+          font-family: "Montserrat", sans-serif;
+          font-size: 14px;
           color: #fff; }
 
-.portfolio-gallery {
-  margin: 60px;
-  width: 1140px; }
-  .portfolio-gallery .portfolio-items-container {
+.portfolio {
+  background: #fff; }
+  .portfolio .portfolio-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
-    .portfolio-gallery .portfolio-items-container .portfolio-item {
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .portfolio .portfolio-container .portfolio-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      height: 250px;
-      width: 350px;
-      border-radius: 6px;
-      margin-bottom: 30px; }
-      .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image {
+      justify-content: center;
+      margin: 0 0 10px 0; }
+      .portfolio .portfolio-container .portfolio-header h1 {
+        font-size: 36px;
+        font-family: "Montserrat", sans-serif;
+        color: #283d50;
+        font-weight: 500;
+        margin-bottom: 0; }
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0; }
+        .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option {
+          font-family: "Open Sans", sans-serif;
+          list-style: none;
+          background-color: #bfddfe;
+          color: #007bff;
+          margin: 20px 15px 20px 15px;
+          border-radius: 50px;
+          padding: 6px 20px;
+          font-size: 12px; }
+          .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option:hover, .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option:active {
+            background-color: #007bff;
+            color: #fff; }
+    .portfolio .portfolio-container .portfolio-gallery {
+      width: 90%; }
+      .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; }
+        .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          height: 200px;
+          width: 30%;
+          border-radius: 6px;
+          margin-bottom: 30px; }
+          .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: 0.1s; }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image:hover .portfolio-item-hover {
+              opacity: 1; }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .image {
+              height: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 6px; }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app1 {
+              background-image: url(../media/portfolio/app1.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web3 {
+              background-image: url(../media/portfolio/web3.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app2 {
+              background-image: url(../media/portfolio/app2.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card2 {
+              background-image: url(../media/portfolio/card2.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web2 {
+              background-image: url(../media/portfolio/web2.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app3 {
+              background-image: url(../media/portfolio/app3.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card1 {
+              background-image: url(../media/portfolio/card1.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card3 {
+              background-image: url(../media/portfolio/card3.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web1 {
+              background-image: url(../media/portfolio/web1.jpg); }
+            .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-direction: column;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              justify-content: center;
+              position: absolute;
+              background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
+              transition: 0.5s; }
+              .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover .portfolio-item-hover-links ion-icon {
+                padding: 6px;
+                font-size: 20px;
+                background-color: #007bff;
+                color: #fff;
+                border-radius: 100%;
+                margin: 10px 5px; }
+              .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 {
+                font-family: "Montserrat", sans-serif;
+                color: #283d50;
+                color: #fff;
+                font-size: 22px;
+                margin: 0; }
+                .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a {
+                  color: #fff;
+                  text-decoration: none; }
+                  .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a:hover {
+                    color: #007bff; }
+              .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover p {
+                font-family: "Open Sans", sans-serif;
+                color: #556877;
+                color: #fff;
+                font-size: 14px;
+                margin: 0; }
+
+.team {
+  background: #fff; }
+  .team .team-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 30px 0; }
+    .team .team-container .team-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 0 10px 0; }
+      .team .team-container .team-header h1 {
+        font-size: 36px;
+        font-family: "Montserrat", sans-serif;
+        color: #283d50;
+        font-weight: 500; }
+      .team .team-container .team-header p {
+        font-size: 15px;
+        margin-top: 0;
+        font-family: "Open Sans", sans-serif;
+        color: #556877;
+        width: 550px;
+        text-align: center; }
+  .team .team-list .team-profiles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: space-around; }
+    .team .team-list .team-profiles-container .team-profile {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 225px;
+      width: 225px;
+      border-radius: 100%;
+      margin: 10px; }
+      .team .team-list .team-profiles-container .team-profile .team-profile-image {
         height: 100%;
         width: 100%;
-        position: relative;
-        overflow: hidden;
-        transition: 0.1s; }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image:hover .portfolio-item-hover {
-          opacity: 1; }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .image {
+        position: relative; }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .image {
           height: 100%;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
-          border-radius: 6px; }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app1 {
-          background-image: url(../media/portfolio/app1.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web3 {
-          background-image: url(../media/portfolio/web3.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app2 {
-          background-image: url(../media/portfolio/app2.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card2 {
-          background-image: url(../media/portfolio/card2.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web2 {
-          background-image: url(../media/portfolio/web2.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .app3 {
-          background-image: url(../media/portfolio/app3.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card1 {
-          background-image: url(../media/portfolio/card1.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .card3 {
-          background-image: url(../media/portfolio/card3.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .web1 {
-          background-image: url(../media/portfolio/web1.jpg); }
-        .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          flex-direction: column;
+          border-radius: 100%;
+          overflow: hidden;
+          transition: 0.1s; }
+          .team .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover {
+            opacity: 1; }
+          .team .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover-content {
+            top: 0;
+            opacity: 1; }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .profile1 {
+          background-image: url(../media/team/team-01.jpg); }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .profile2 {
+          background-image: url(../media/team/team-02.jpg); }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .profile3 {
+          background-image: url(../media/team/team-03.jpg); }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .profile4 {
+          background-image: url(../media/team/team-04.jpg); }
+        .team .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover {
           width: 100%;
           height: 100%;
           opacity: 0;
-          justify-content: center;
-          position: absolute;
           background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
-          transition: 0.5s; }
-          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover .portfolio-item-hover-links ion-icon {
-            padding: 6px;
-            font-size: 20px;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 100%;
-            margin: 10px 5px; }
-          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 {
-            font-family: "Montserrat", sans-serif;
-            color: #283d50;
-            color: #fff;
-            font-size: 22px;
-            margin: 0; }
-            .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a {
+          transition: 0.3s ease-out; }
+          .team .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 50px;
+            opacity: 0;
+            transition: 0.3s ease-out; }
+            .team .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content h4 {
+              font-family: "Montserrat", sans-serif;
+              color: #283d50;
               color: #fff;
-              text-decoration: none; }
-              .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover h4 a:hover {
-                color: #007bff; }
-          .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover p {
-            font-family: "Open Sans", sans-serif;
-            color: #556877;
-            color: #fff;
-            font-size: 14px;
-            margin: 0; }
+              font-size: 18px;
+              margin: 0; }
+            .team .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content p {
+              font-family: "Open Sans", sans-serif;
+              color: #556877;
+              color: #fff;
+              font-style: italic;
+              font-size: 14px;
+              margin: 0; }
+            .team .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content .team-profile-hover-links i {
+              padding: 6px;
+              font-size: 14px;
+              color: #fff;
+              top: 250px; }
 
-.team {
-  background: #ecf5ff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; }
-  .team .team-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 0 10px 0; }
-    .team .team-header h1 {
-      font-size: 36px;
-      font-family: "Montserrat", sans-serif;
-      color: #283d50;
-      font-weight: 500; }
-    .team .team-header p {
-      font-size: 15px;
-      margin-top: 0;
-      font-family: "Open Sans", sans-serif;
-      color: #556877;
-      width: 550px;
-      text-align: center; }
-
-.team-list .team-profiles-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1140px; }
-  .team-list .team-profiles-container .team-profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 225px;
-    width: 225px;
-    border-radius: 6px;
-    margin: 30px; }
-    .team-list .team-profiles-container .team-profile .team-profile-image {
-      height: 100%;
-      width: 100%;
-      position: relative; }
-      .team-list .team-profiles-container .team-profile .team-profile-image .image {
-        height: 100%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 6px;
-        border-radius: 100%;
-        overflow: hidden;
-        transition: 0.1s; }
-        .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover {
-          opacity: 1; }
-        .team-list .team-profiles-container .team-profile .team-profile-image .image:hover .team-profile-hover-content {
-          top: 0;
-          opacity: 1; }
-      .team-list .team-profiles-container .team-profile .team-profile-image .profile1 {
-        background-image: url(../media/team/team-01.jpg); }
-      .team-list .team-profiles-container .team-profile .team-profile-image .profile2 {
-        background-image: url(../media/team/team-02.jpg); }
-      .team-list .team-profiles-container .team-profile .team-profile-image .profile3 {
-        background-image: url(../media/team/team-03.jpg); }
-      .team-list .team-profiles-container .team-profile .team-profile-image .profile4 {
-        background-image: url(../media/team/team-04.jpg); }
-      .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover {
+@media all and (max-width: 1000px) {
+  .choose-us .choose-us-container {
+    max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-header {
+      max-width: 100%; }
+      .choose-us .choose-us-container .choose-us-header h1 {
+        max-width: 90%; }
+      .choose-us .choose-us-container .choose-us-header p {
+        max-width: 90%; }
+    .choose-us .choose-us-container .choose-us-card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 20px; }
+      .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
         width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-image: linear-gradient(to bottom, rgba(0, 59, 122, 0.5), rgba(0, 59, 122, 0.5));
-        transition: 0.3s ease-out; }
-        .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content {
+        max-width: inherit; }
+  .portfolio .portfolio-container {
+    max-width: 100%; }
+    .portfolio .portfolio-container .portfolio-header {
+      max-width: 100%; }
+      .portfolio .portfolio-container .portfolio-header h1 {
+        max-width: 90%; }
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
+        display: flex;
+        max-width: 90%; }
+    .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item {
+      width: 48%;
+      height: 300px; }
+  .team .team-container .team-list .team-profiles-container .team-profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px; } }
+
+@media all and (max-width: 600px) {
+  .choose-us .choose-us-container {
+    max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 20px; }
+      .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
+        max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-counters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 0; }
+  .portfolio .portfolio-container {
+    max-width: 100%; }
+    .portfolio .portfolio-container .portfolio-header {
+      max-width: 100%; }
+      .portfolio .portfolio-container .portfolio-header h1 {
+        max-width: 90%; }
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter {
+        margin: 20px; }
+        .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          flex-direction: column;
           justify-content: center;
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 50px;
-          opacity: 0;
-          transition: 0.3s ease-out; }
-          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content h4 {
-            font-family: "Montserrat", sans-serif;
-            color: #283d50;
-            color: #fff;
-            font-size: 18px;
-            margin: 0; }
-          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content p {
-            font-family: "Open Sans", sans-serif;
-            color: #556877;
-            color: #fff;
-            font-style: italic;
-            font-size: 14px;
-            margin: 0; }
-          .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content .team-profile-hover-links i {
-            padding: 6px;
-            font-size: 14px;
-            color: #fff;
-            top: 250px; }
+          max-width: 90%;
+          flex-wrap: wrap;
+          margin: 0 auto; }
+          .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option {
+            font-size: 20px;
+            margin: 10px 20px; }
+    .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item {
+      width: 100%;
+      height: 300px; }
+  .team .team-container .team-header p {
+    width: 100%; }
+  .team .team-container .team-list .team-profiles-container .team-profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px; } }
 
 html {
   scroll-behavior: smooth; }
