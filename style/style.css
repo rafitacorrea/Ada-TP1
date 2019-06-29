@@ -18,7 +18,8 @@ body {
     align-items: center;
     flex-direction: column;
     max-width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 30px 0; }
     .choose-us .choose-us-container .choose-us-header {
       display: flex;
       justify-content: space-between;
@@ -104,14 +105,15 @@ body {
           color: #fff; }
 
 .portfolio {
-  background: #ecf5ff; }
+  background: #fff; }
   .portfolio .portfolio-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     max-width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 30px 0; }
     .portfolio .portfolio-container .portfolio-header {
       display: flex;
       justify-content: space-between;
@@ -125,13 +127,13 @@ body {
         color: #283d50;
         font-weight: 500;
         margin-bottom: 0; }
-      .portfolio .portfolio-container .portfolio-header .portfolio-filter ul {
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         justify-content: center;
         padding-left: 0; }
-        .portfolio .portfolio-container .portfolio-header .portfolio-filter ul li {
+        .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option {
           font-family: "Open Sans", sans-serif;
           list-style: none;
           background-color: #bfddfe;
@@ -140,7 +142,7 @@ body {
           border-radius: 50px;
           padding: 6px 20px;
           font-size: 12px; }
-          .portfolio .portfolio-container .portfolio-header .portfolio-filter ul li:hover, .portfolio .portfolio-container .portfolio-header .portfolio-filter ul li:active {
+          .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option:hover, .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option:active {
             background-color: #007bff;
             color: #fff; }
     .portfolio .portfolio-container .portfolio-gallery {
@@ -229,14 +231,15 @@ body {
                 margin: 0; }
 
 .team {
-  background: #ecf5ff; }
+  background: #fff; }
   .team .team-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     max-width: 90%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 30px 0; }
     .team .team-container .team-header {
       display: flex;
       justify-content: space-between;
@@ -264,7 +267,7 @@ body {
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
-    align-content: space-between; }
+    align-content: space-around; }
     .team .team-list .team-profiles-container .team-profile {
       display: flex;
       justify-content: space-between;
@@ -336,6 +339,88 @@ body {
               font-size: 14px;
               color: #fff;
               top: 250px; }
+
+@media all and (max-width: 1000px) {
+  .choose-us .choose-us-container {
+    max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-header {
+      max-width: 100%; }
+      .choose-us .choose-us-container .choose-us-header h1 {
+        max-width: 90%; }
+      .choose-us .choose-us-container .choose-us-header p {
+        max-width: 90%; }
+    .choose-us .choose-us-container .choose-us-card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 20px; }
+      .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
+        max-width: 100%; }
+  .portfolio .portfolio-container {
+    max-width: 100%; }
+    .portfolio .portfolio-container .portfolio-header {
+      max-width: 100%; }
+      .portfolio .portfolio-container .portfolio-header h1 {
+        max-width: 90%; }
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
+        display: flex;
+        max-width: 90%; }
+    .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item {
+      width: 48%;
+      height: 300px; }
+  .team .team-container .team-list .team-profiles-container .team-profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px; } }
+
+@media all and (max-width: 600px) {
+  .choose-us .choose-us-container {
+    max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-card-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0 20px; }
+      .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
+        max-width: 100%; }
+    .choose-us .choose-us-container .choose-us-counters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 0; }
+  .portfolio .portfolio-container {
+    max-width: 100%; }
+    .portfolio .portfolio-container .portfolio-header {
+      max-width: 100%; }
+      .portfolio .portfolio-container .portfolio-header h1 {
+        max-width: 90%; }
+      .portfolio .portfolio-container .portfolio-header .portfolio-filter {
+        margin: 20px; }
+        .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          justify-content: center;
+          max-width: 90%;
+          flex-wrap: wrap;
+          margin: 0 auto; }
+          .portfolio .portfolio-container .portfolio-header .portfolio-filter .portfolio-filter-list .portfolio-filter-option {
+            font-size: 20px;
+            margin: 10px 20px; }
+    .portfolio .portfolio-container .portfolio-gallery .portfolio-items-container .portfolio-item {
+      width: 100%;
+      height: 300px; }
+  .team .team-container .team-header p {
+    width: 100%; }
+  .team .team-container .team-list .team-profiles-container .team-profile {
+    width: 300px;
+    height: 300px;
+    margin: 20px; } }
 
 html {
   scroll-behavior: smooth; }

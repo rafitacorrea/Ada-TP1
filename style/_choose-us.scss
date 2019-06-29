@@ -10,6 +10,7 @@ body {
     @include flex-column;
     max-width: 90%;
     margin: 0 auto;
+    padding: 30px 0;
     .choose-us-header {
       @include flex-column;
       justify-content: center;
@@ -105,11 +106,12 @@ body {
 }
 
 .portfolio {
-  background: $body-background-color;
+  background: #fff;
   .portfolio-container {
     @include flex-column;
     max-width: 90%;
     margin: 0 auto;
+    padding: 30px 0;
     .portfolio-header {
       @include flex-column;
       justify-content: center;
@@ -121,11 +123,11 @@ body {
         margin-bottom: 0;
       }
       .portfolio-filter {
-        ul {
+        .portfolio-filter-list {
           @include flex-row;
           justify-content: center;
           padding-left: 0;
-          li {
+          .portfolio-filter-option {
             font-family: $subtitle-font;
             list-style: none;
             background-color: $highlight-icons-color;
@@ -249,11 +251,12 @@ body {
 }
 
 .team {
-  background: $body-background-color;
+  background: #fff;
   .team-container {
     @include flex-column;
     max-width: 90%;
     margin: 0 auto;
+    padding: 30px 0;
     .team-header {
       @include flex-column;
       justify-content: center;
@@ -279,7 +282,7 @@ body {
       width: 100%;
       margin: 0 auto;
       flex-wrap: wrap;
-      align-content: space-between;
+      align-content: space-around;
       .team-profile {
         @include flex-column;
         justify-content: center;
@@ -360,6 +363,148 @@ body {
                 }
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .choose-us {
+    .choose-us-container {
+      max-width: 100%;
+      .choose-us-header {
+        max-width: 100%;
+        h1 {
+          max-width: 90%;
+        }
+        p {
+          max-width: 90%;
+        }
+      }
+      .choose-us-card-container {
+        @include flex-column;
+        margin: 0;
+        padding: 0 20px;
+        .choose-us-card {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    .portfolio-container {
+      max-width: 100%;
+      .portfolio-header {
+        max-width: 100%;
+        h1 {
+          max-width: 90%;
+        }
+        .portfolio-filter {
+          .portfolio-filter-list {
+            display: flex;
+            max-width: 90%;
+
+            .portfolio-filter-option {
+            }
+          }
+        }
+      }
+      .portfolio-gallery {
+        .portfolio-items-container {
+          .portfolio-item {
+            width: 48%;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    .team-container {
+      .team-list {
+        .team-profiles-container {
+          .team-profile {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .choose-us {
+    .choose-us-container {
+      max-width: 100%;
+      .choose-us-card-container {
+        @include flex-column;
+        margin: 0;
+        padding: 0 20px;
+        .choose-us-card {
+          max-width: 100%;
+        }
+      }
+      .choose-us-counters {
+        @include flex-row;
+        flex-wrap: wrap;
+        padding: 20px 0;
+      }
+    }
+  }
+
+  .portfolio {
+    .portfolio-container {
+      max-width: 100%;
+      .portfolio-header {
+        max-width: 100%;
+        h1 {
+          max-width: 90%;
+        }
+        .portfolio-filter {
+          margin: 20px;
+          .portfolio-filter-list {
+            @include flex-row;
+            justify-content: center;
+            max-width: 90%;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            .portfolio-filter-option {
+              font-size: 20px;
+              margin: 10px 20px;
+            }
+          }
+        }
+      }
+      .portfolio-gallery {
+        .portfolio-items-container {
+          .portfolio-item {
+            width: 100%;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .team {
+    .team-container {
+      .team-header {
+        p {
+          width: 100%;
+        }
+      }
+      .team-list {
+        .team-profiles-container {
+          .team-profile {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
           }
         }
       }
