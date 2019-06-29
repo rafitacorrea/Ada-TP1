@@ -15,7 +15,9 @@
   .services .services-title {
     font: 100% "Montserrat", sans-serif;
     font-size: 36px;
-    text-align: center; }
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%; }
   .services .services-description {
     font-size: 15px;
     font: 95% "Open Sans", sans-serif;
@@ -23,39 +25,116 @@
     color: #556877;
     width: 30%;
     line-height: 1.6;
-    margin: auto; }
+    margin-bottom: 2%; }
 
 .services-cards-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  width: 55%;
-  padding: 1%; }
+  max-width: 50%;
+  padding-bottom: 2%; }
   .services-cards-container .services-card {
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
     background-color: #ffffff;
-    width: 40%;
-    padding: 35px;
-    margin: 50px 20px 0px 10px;
+    max-width: 37%;
+    padding: 2.5%;
+    margin-bottom: 5%;
     line-height: 1;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    flex-grow: 1;
+    transition: transform 0.8s; }
+  .services-cards-container .services-card:hover {
+    transform: translate(0px, -10px); }
   .services-cards-container .card-title {
     font: 100% "Montserrat", sans-serif;
+    font-size: 110%;
     font-weight: bold; }
   .services-cards-container .card-title:link {
     color: #000;
     text-decoration: none; }
   .services-cards-container .card-title:visited {
     color: #000; }
+  .services-cards-container .card-title:hover {
+    color: #007bff; }
   .services-cards-container .card-description {
-    font: 90% "Open Sans", sans-serif;
+    font: 95% "Open Sans", sans-serif;
     color: #283d50;
     line-height: 1.6; }
+
+.contact-us-main-container {
+  padding: 40px 0; }
+  .contact-us-main-container .contact-us-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+    color: #283d50; }
+  .contact-us-main-container .contact-us-row-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .contact-us-main-container .map-container {
+    display: flex;
+    width: 50%;
+    margin-left: 1%; }
+  .contact-us-main-container .contact-us-form-container {
+    width: 50%; }
+  .contact-us-main-container .contact-us-info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%; }
+  .contact-us-main-container .contact-icon-container {
+    width: 25px;
+    height: 25px; }
+  .contact-us-main-container .contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .contact-us-main-container .contact-info-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #283d50; }
+  .contact-us-main-container .form-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 75px; }
+  .contact-us-main-container .top-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 50%;
+    color: #556877; }
+  .contact-us-main-container .input-box {
+    font-size: 14px;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: #556877; }
+  .contact-us-main-container .message-input-box {
+    font-size: 14px;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: #556877; }
+  .contact-us-main-container .form-button {
+    background-color: #007bff;
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    padding: 8px 30px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0 40%; }
+  .contact-us-main-container .form-button:hover {
+    background-color: #0067d5; }
 
 html,
 body {

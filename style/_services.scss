@@ -22,6 +22,8 @@
     font: 100% "Montserrat", sans-serif;
     font-size: $title-title-size;
     text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
   }
 
   & .services-description {
@@ -31,31 +33,32 @@
     color: $subtitle-color;
     width: 30%;
     line-height: 1.6;
-    margin: auto;
+    margin-bottom: 2%;
   }
 }
 
 .services-cards-container {
   @include flex-row();
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  width: 55%;
-  padding: 1%;
+  max-width: 50%;
+  padding-bottom: 2%;
 
   & .services-card {
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
     background-color: #ffffff;
-    width: 40%;
-    padding: 35px;
-    margin: 50px 20px 0px 10px;
+    max-width: 37%;
+    padding: 2.5%;
+    margin-bottom: 5%;
     line-height: 1;
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
+    transition: transform 0.8s;
   }
 
   & .services-card:hover {
+    transform: translate(0px, -10px);
   }
 
   // & .services-icon-container {
@@ -66,6 +69,7 @@
 
   & .card-title {
     font: 100% "Montserrat", sans-serif;
+    font-size: 110%;
     font-weight: bold;
   }
 
@@ -78,9 +82,111 @@
     color: #000;
   }
 
+  & .card-title:hover {
+    color: $active-link-color;
+  }
+
   & .card-description {
-    font: 90% "Open Sans", sans-serif;
+    font: 95% "Open Sans", sans-serif;
     color: $text-color;
     line-height: 1.6;
+  }
+}
+
+.contact-us-main-container {
+  padding: 40px 0;
+
+  & .contact-us-title {
+    font-family: $main-font;
+    font-size: $title-title-size;
+    text-align: center;
+    font-weight: normal;
+    color: $text-color;
+  }
+
+  & .contact-us-row-container {
+    @include flex-row();
+  }
+
+  & .map-container {
+    display: flex;
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  & .contact-us-form-container {
+    width: 50%;
+  }
+
+  & .contact-us-info-container {
+    @include flex-row();
+    margin-bottom: 3%;
+  }
+
+  & .contact-icon-container {
+    width: 25px;
+    height: 25px;
+  }
+
+  & .contact-info {
+    @include flex-row();
+  }
+
+  & .contact-info-text {
+    font-family: $secondary-font;
+    font-size: $subtitle-font-size;
+    color: $text-color;
+  }
+
+  & .contact-us-form {
+  }
+
+  & .form-row {
+    @include flex-row();
+    margin-right: 75px;
+  }
+
+  & .top-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $item-title-description;
+    margin-bottom: 2%;
+    // margin-right: 65px;
+    padding: 1%;
+    width: 50%;
+    color: $subtitle-color;
+    // margin: 15px 5px;
+  }
+
+  & .input-box {
+    font-size: $item-title-description;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: $subtitle-color;
+  }
+
+  & .message-input-box {
+    font-size: $item-title-description;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: $subtitle-color;
+  }
+
+  & .form-button {
+    background-color: $secondary-color;
+    border-radius: 20px;
+    border: 0;
+    color: $highlighted-font-color;
+    padding: 8px 30px;
+    transition: 0.3s;
+    font-size: $item-title-size;
+    font-weight: lighter;
+    margin: 0 40%;
+  }
+
+  & .form-button:hover {
+    background-color: #0067d5;
   }
 }
