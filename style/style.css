@@ -357,7 +357,8 @@ body {
       margin: 0;
       padding: 0 20px; }
       .choose-us .choose-us-container .choose-us-card-container .choose-us-card {
-        max-width: 100%; }
+        width: 100%;
+        max-width: inherit; }
   .portfolio .portfolio-container {
     max-width: 100%; }
     .portfolio .portfolio-container .portfolio-header {
