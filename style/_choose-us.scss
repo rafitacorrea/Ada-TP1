@@ -5,96 +5,100 @@ body {
 }
 
 .choose-us {
-  @include flex-column;
   background-color: $highlight-section-color;
-  .choose-us-header {
+  .choose-us-container {
     @include flex-column;
-    justify-content: center;
-    margin: 0 0 10px 0;
-    h1 {
-      font-size: 36px;
-      @include title-font;
-      color: #fff;
-      font-weight: 500;
-    }
-    p {
-      font-size: 15px;
-      margin-top: 0;
-      @include subtitle-font;
-      color: #fff;
-      width: 550px;
-      text-align: center;
-    }
-  }
-  .choose-us-card-container {
-    @include flex-row;
-    justify-content: space-between;
-    padding: 0 60px;
-    margin: 20px;
-    .choose-us-card {
+    max-width: 90%;
+    margin: 0 auto;
+    .choose-us-header {
       @include flex-column;
-      flex: 1;
-      max-width: 300px;
-      height: 100%;
-      padding: 15px 15px;
-      margin: 0 20px;
-      border-radius: 10px;
-      background-color: $highlight-card-color;
-      color: $highlighted-font-color;
-      font-size: $subtitle-font-size;
-      font-family: $subtitle-font;
-      text-align: center;
-      transition: 0.5s;
-      &:hover {
-        background-color: $highlight-card-color-active;
-        a {
-          border-bottom: 1px solid $highlight-card-color;
-        }
+      justify-content: center;
+      margin: 0 0 10px 0;
+      h1 {
+        font-size: 36px;
+        @include title-font;
+        color: #fff;
+        font-weight: 500;
       }
-      .choose-us-card-content {
-        padding-top: 20px;
-        .far.fa-gem,
-        .fas.fa-language,
-        .far.fa-object-group {
-          @extend %icons;
-        }
-        h2 {
-          font: $title-font;
-        }
+      p {
+        font-size: 15px;
+        margin-top: 0;
+        @include subtitle-font;
+        color: #fff;
+        width: 550px;
+        text-align: center;
       }
-      .choose-us-card-link {
-        .readmore {
-          padding-bottom: 20px;
+    }
+    .choose-us-card-container {
+      @include flex-row;
+      justify-content: space-between;
+      padding: 0 60px;
+      margin: 20px;
+      .choose-us-card {
+        @include flex-column;
+        flex: 1;
+        max-width: 30%;
+        height: 100%;
+        padding: 15px 15px;
+        margin: 1.5%;
+        border-radius: 10px;
+        background-color: $highlight-card-color;
+        color: $highlighted-font-color;
+        font-size: $subtitle-font-size;
+        font-family: $subtitle-font;
+        text-align: center;
+        transition: 0.5s;
+        &:hover {
+          background-color: $highlight-card-color-active;
           a {
-            color: $highlighted-font-color;
-            font-weight: 600;
-            text-decoration: none;
-            &:hover {
-              border-bottom: 2px solid $highlighted-font-color;
+            border-bottom: 1px solid $highlight-card-color;
+          }
+        }
+        .choose-us-card-content {
+          padding-top: 20px;
+          .far.fa-gem,
+          .fas.fa-language,
+          .far.fa-object-group {
+            @extend %icons;
+          }
+          h2 {
+            font: $title-font;
+          }
+        }
+        .choose-us-card-link {
+          .readmore {
+            padding-bottom: 20px;
+            a {
+              color: $highlighted-font-color;
+              font-weight: 600;
+              text-decoration: none;
+              &:hover {
+                border-bottom: 2px solid $highlighted-font-color;
+              }
             }
           }
         }
       }
     }
-  }
-  .choose-us-counters {
-    @include flex-row;
-    width: 900px;
-    margin: 0 auto;
-    padding: 60px;
-    flex: 1;
-    .counter-box {
-      @include flex-column;
-      .counter-number {
-        font-size: $counter-font-size;
-        color: $highlighted-font-color;
-        font-family: $title-font;
-        font-weight: 700;
-      }
-      p {
-        font-family: $title-font;
-        font-size: 14px;
-        color: $highlighted-font-color;
+    .choose-us-counters {
+      @include flex-row;
+      width: 80%;
+      margin: 0 auto;
+      padding: 60px;
+      flex: 1;
+      .counter-box {
+        @include flex-column;
+        .counter-number {
+          font-size: $counter-font-size;
+          color: $highlighted-font-color;
+          font-family: $title-font;
+          font-weight: 700;
+        }
+        p {
+          font-family: $title-font;
+          font-size: 14px;
+          color: $highlighted-font-color;
+        }
       }
     }
   }
@@ -102,140 +106,141 @@ body {
 
 .portfolio {
   background: $body-background-color;
-  @include flex-column;
-  background-color: body-background-color;
-  .portfolio-header {
+  .portfolio-container {
     @include flex-column;
-    justify-content: center;
-    margin: 0 0 10px 0;
-    h1 {
-      font-size: 36px;
-      @include title-font;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-    .portfolio-filter {
-      ul {
-        @include flex-row;
-        justify-content: center;
-        padding-left: 0;
-        li {
-          font-family: $subtitle-font;
-          list-style: none;
-          background-color: $highlight-icons-color;
-          color: $active-link-color;
-          margin: 20px 15px 20px 15px;
-          border-radius: 50px;
-          padding: 6px 20px;
-          font-size: 12px;
-          &:hover,
-          &:active {
-            background-color: $active-link-color;
-            color: $highlighted-font-color;
+    max-width: 90%;
+    margin: 0 auto;
+    .portfolio-header {
+      @include flex-column;
+      justify-content: center;
+      margin: 0 0 10px 0;
+      h1 {
+        font-size: 36px;
+        @include title-font;
+        font-weight: 500;
+        margin-bottom: 0;
+      }
+      .portfolio-filter {
+        ul {
+          @include flex-row;
+          justify-content: center;
+          padding-left: 0;
+          li {
+            font-family: $subtitle-font;
+            list-style: none;
+            background-color: $highlight-icons-color;
+            color: $active-link-color;
+            margin: 20px 15px 20px 15px;
+            border-radius: 50px;
+            padding: 6px 20px;
+            font-size: 12px;
+            &:hover,
+            &:active {
+              background-color: $active-link-color;
+              color: $highlighted-font-color;
+            }
           }
         }
       }
     }
-  }
-}
-
-.portfolio-gallery {
-  margin: 60px;
-  width: 1140px;
-  .portfolio-items-container {
-    @include flex-row;
-    flex-wrap: wrap;
-    .portfolio-item {
-      @include flex-column;
-      height: 250px;
-      width: 350px;
-      border-radius: 6px;
-      margin-bottom: 30px;
-      .portfolio-item-image {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        transition: 0.1s;
-        &:hover .portfolio-item-hover {
-          opacity: 1;
-        }
-        .image {
-          height: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          border-radius: 6px;
-        }
-
-        .app1 {
-          background-image: url(../media/portfolio/app1.jpg);
-        }
-        .web3 {
-          background-image: url(../media/portfolio/web3.jpg);
-        }
-        .app2 {
-          background-image: url(../media/portfolio/app2.jpg);
-        }
-        .card2 {
-          background-image: url(../media/portfolio/card2.jpg);
-        }
-        .web2 {
-          background-image: url(../media/portfolio/web2.jpg);
-        }
-        .app3 {
-          background-image: url(../media/portfolio/app3.jpg);
-        }
-        .card1 {
-          background-image: url(../media/portfolio/card1.jpg);
-        }
-        .card3 {
-          background-image: url(../media/portfolio/card3.jpg);
-        }
-        .web1 {
-          background-image: url(../media/portfolio/web1.jpg);
-        }
-        .portfolio-item-hover {
+    .portfolio-gallery {
+      width: 90%;
+      .portfolio-items-container {
+        @include flex-row;
+        flex-wrap: wrap;
+        .portfolio-item {
           @include flex-column;
-          width: 100%;
-          height: 100%;
-          opacity: 0;
-          justify-content: center;
-          position: absolute;
-          background-image: linear-gradient(
-            to bottom,
-            $portfolio-hover,
-            $portfolio-hover
-          );
-          transition: 0.5s;
-          .portfolio-item-hover-links {
-            ion-icon {
-              padding: 6px;
-              font-size: 20px;
-              background-color: $active-link-color;
-              color: $highlighted-font-color;
-              border-radius: 100%;
-              margin: 10px 5px;
+          height: 200px;
+          width: 30%;
+          border-radius: 6px;
+          margin-bottom: 30px;
+          .portfolio-item-image {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            transition: 0.1s;
+            &:hover .portfolio-item-hover {
+              opacity: 1;
             }
-          }
-          h4 {
-            @include title-font;
-            color: $highlighted-font-color;
-            font-size: 22px;
-            margin: 0;
-            a {
-              color: $highlighted-font-color;
-              text-decoration: none;
-              &:hover {
-                color: $active-link-color;
+            .image {
+              height: 100%;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              border-radius: 6px;
+            }
+
+            .app1 {
+              background-image: url(../media/portfolio/app1.jpg);
+            }
+            .web3 {
+              background-image: url(../media/portfolio/web3.jpg);
+            }
+            .app2 {
+              background-image: url(../media/portfolio/app2.jpg);
+            }
+            .card2 {
+              background-image: url(../media/portfolio/card2.jpg);
+            }
+            .web2 {
+              background-image: url(../media/portfolio/web2.jpg);
+            }
+            .app3 {
+              background-image: url(../media/portfolio/app3.jpg);
+            }
+            .card1 {
+              background-image: url(../media/portfolio/card1.jpg);
+            }
+            .card3 {
+              background-image: url(../media/portfolio/card3.jpg);
+            }
+            .web1 {
+              background-image: url(../media/portfolio/web1.jpg);
+            }
+            .portfolio-item-hover {
+              @include flex-column;
+              width: 100%;
+              height: 100%;
+              opacity: 0;
+              justify-content: center;
+              position: absolute;
+              background-image: linear-gradient(
+                to bottom,
+                $portfolio-hover,
+                $portfolio-hover
+              );
+              transition: 0.5s;
+              .portfolio-item-hover-links {
+                ion-icon {
+                  padding: 6px;
+                  font-size: 20px;
+                  background-color: $active-link-color;
+                  color: $highlighted-font-color;
+                  border-radius: 100%;
+                  margin: 10px 5px;
+                }
+              }
+              h4 {
+                @include title-font;
+                color: $highlighted-font-color;
+                font-size: 22px;
+                margin: 0;
+                a {
+                  color: $highlighted-font-color;
+                  text-decoration: none;
+                  &:hover {
+                    color: $active-link-color;
+                  }
+                }
+              }
+              p {
+                @include subtitle-font;
+                color: $highlighted-font-color;
+                font-size: 14px;
+                margin: 0;
               }
             }
-          }
-          p {
-            @include subtitle-font;
-            color: $highlighted-font-color;
-            font-size: 14px;
-            margin: 0;
           }
         }
       }
@@ -245,107 +250,114 @@ body {
 
 .team {
   background: $body-background-color;
-  @include flex-column;
-  .team-header {
+  .team-container {
     @include flex-column;
-    justify-content: center;
-    margin: 0 0 10px 0;
-    h1 {
-      font-size: 36px;
-      @include title-font;
-      font-weight: 500;
-    }
-    p {
-      font-size: 15px;
-      margin-top: 0;
-      @include subtitle-font;
-      width: 550px;
-      text-align: center;
-    }
-  }
-}
-.team-list {
-  .team-profiles-container {
-    @include flex-row;
-    width: 1140px;
-    .team-profile {
+    max-width: 90%;
+    margin: 0 auto;
+    .team-header {
       @include flex-column;
       justify-content: center;
-      height: 225px;
-      width: 225px;
-      border-radius: 6px;
-      margin: 30px;
-      .team-profile-image {
-        height: 100%;
-        width: 100%;
-        position: relative;
-        .image {
+      margin: 0 0 10px 0;
+      h1 {
+        font-size: 36px;
+        @include title-font;
+        font-weight: 500;
+      }
+      p {
+        font-size: 15px;
+        margin-top: 0;
+        @include subtitle-font;
+        width: 550px;
+        text-align: center;
+      }
+    }
+  }
+  .team-list {
+    .team-profiles-container {
+      @include flex-row;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      align-content: space-between;
+      .team-profile {
+        @include flex-column;
+        justify-content: center;
+        height: 225px;
+        width: 225px;
+        border-radius: 100%;
+        margin: 10px;
+        .team-profile-image {
           height: 100%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-          border-radius: 6px;
-          border-radius: 100%;
-          overflow: hidden;
-          transition: 0.1s;
-          &:hover .team-profile-hover {
-            opacity: 1;
-          }
-          &:hover .team-profile-hover-content {
-            top: 0;
-            opacity: 1;
-          }
-        }
-        .profile1 {
-          background-image: url(../media/team/team-01.jpg);
-        }
-        .profile2 {
-          background-image: url(../media/team/team-02.jpg);
-        }
-        .profile3 {
-          background-image: url(../media/team/team-03.jpg);
-        }
-        .profile4 {
-          background-image: url(../media/team/team-04.jpg);
-        }
-        .team-profile-hover {
           width: 100%;
-          height: 100%;
-          opacity: 0;
-          background-image: linear-gradient(
-            to bottom,
-            $portfolio-hover,
-            $portfolio-hover
-          );
-          transition: 0.3s ease-out;
-          .team-profile-hover-content {
-            @include flex-column;
-            justify-content: center;
+          position: relative;
+          .image {
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 100%;
+            overflow: hidden;
+            transition: 0.1s;
+            &:hover .team-profile-hover {
+              opacity: 1;
+            }
+            &:hover .team-profile-hover-content {
+              top: 0;
+              opacity: 1;
+            }
+          }
+          .profile1 {
+            background-image: url(../media/team/team-01.jpg);
+          }
+          .profile2 {
+            background-image: url(../media/team/team-02.jpg);
+          }
+          .profile3 {
+            background-image: url(../media/team/team-03.jpg);
+          }
+          .profile4 {
+            background-image: url(../media/team/team-04.jpg);
+          }
+          .team-profile-hover {
             width: 100%;
             height: 100%;
-            position: absolute;
-            top: 50px;
             opacity: 0;
+            background-image: linear-gradient(
+              to bottom,
+              $portfolio-hover,
+              $portfolio-hover
+            );
             transition: 0.3s ease-out;
-            h4 {
-              @include title-font;
-              color: $highlighted-font-color;
-              font-size: $item-title-size;
-              margin: 0;
-            }
-            p {
-              @include subtitle-font;
-              color: $highlighted-font-color;
-              font-style: italic;
-              font-size: 14px;
-              margin: 0;
-            }
-            .team-profile-hover-links {
-              i {
-                padding: 6px;
-                font-size: $item-title-description;
+            .team-profile-hover-content {
+              @include flex-column;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 50px;
+              opacity: 0;
+              transition: 0.3s ease-out;
+              h4 {
+                @include title-font;
                 color: $highlighted-font-color;
-                top: 250px;
+                font-size: $item-title-size;
+                margin: 0;
+              }
+              p {
+                @include subtitle-font;
+                color: $highlighted-font-color;
+                font-style: italic;
+                font-size: 14px;
+                margin: 0;
+              }
+              .team-profile-hover-links {
+                i {
+                  padding: 6px;
+                  font-size: $item-title-description;
+                  color: $highlighted-font-color;
+                  top: 250px;
+                }
               }
             }
           }
