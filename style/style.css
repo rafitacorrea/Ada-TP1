@@ -7,45 +7,55 @@
 
 .services {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 10px 10px -8px rgba(0, 0, 0, 0.43); }
   .services .services-title {
     font: 100% "Montserrat", sans-serif;
     font-size: 36px;
     text-align: center; }
   .services .services-description {
     font-size: 15px;
-    font: 100% "Open Sans", sans-serif;
+    font: 95% "Open Sans", sans-serif;
     text-align: center;
-    color: #556877; }
+    color: #556877;
+    width: 30%;
+    line-height: 1.6;
+    margin: auto; }
 
 .services-cards-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 900px;
-  height: auto; }
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 55%;
+  padding: 1%; }
   .services-cards-container .services-card {
-    border-radius: 5%;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
     background-color: #ffffff;
-    height: 50%;
-    width: 700px;
-    margin: 2%; }
-
-.services-icon-container {
-  height: 200px;
-  width: 200px; }
-
-.services-icon-container img {
-  height: auto;
-  width: 100%; }
-
-.card-title {
-  font: 100% "Montserrat", sans-serif; }
-
-.card-description {
-  font: 100% "Open Sans", sans-serif; }
+    width: 40%;
+    padding: 35px;
+    margin: 50px 20px 0px 10px;
+    line-height: 1;
+    position: relative;
+    overflow: hidden; }
+  .services-cards-container .card-title {
+    font: 100% "Montserrat", sans-serif;
+    font-weight: bold; }
+  .services-cards-container .card-title:link {
+    color: #000;
+    text-decoration: none; }
+  .services-cards-container .card-title:visited {
+    color: #000; }
+  .services-cards-container .card-description {
+    font: 90% "Open Sans", sans-serif;
+    color: #283d50;
+    line-height: 1.6; }
 
 html,
 body {
@@ -54,13 +64,13 @@ body {
 
 .choose-us {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background-color: #004a99; }
   .choose-us .choose-us-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -81,14 +91,14 @@ body {
       text-align: center; }
   .choose-us .choose-us-card-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     justify-content: space-between;
     padding: 0 60px;
     margin: 20px; }
     .choose-us .choose-us-card-container .choose-us-card {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-direction: column;
       flex: 1;
@@ -121,7 +131,7 @@ body {
             border-bottom: 2px solid #fff; }
   .choose-us .choose-us-counters {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 900px;
     margin: 0 auto;
@@ -129,7 +139,7 @@ body {
     flex: 1; }
     .choose-us .choose-us-counters .counter-box {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-direction: column; }
       .choose-us .choose-us-counters .counter-box .counter-number {
@@ -145,13 +155,13 @@ body {
 .portfolio {
   background: #ecf5ff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   background-color: body-background-color; }
   .portfolio .portfolio-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -164,7 +174,7 @@ body {
       margin-bottom: 0; }
     .portfolio .portfolio-header .portfolio-filter ul {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       justify-content: center;
       padding-left: 0; }
@@ -186,12 +196,12 @@ body {
   width: 1140px; }
   .portfolio-gallery .portfolio-items-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
     .portfolio-gallery .portfolio-items-container .portfolio-item {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       flex-direction: column;
       height: 250px;
@@ -232,7 +242,7 @@ body {
           background-image: url(../media/portfolio/web1.jpg); }
         .portfolio-gallery .portfolio-items-container .portfolio-item .portfolio-item-image .portfolio-item-hover {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           flex-direction: column;
           width: 100%;
@@ -270,12 +280,12 @@ body {
 .team {
   background: #ecf5ff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column; }
   .team .team-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -295,12 +305,12 @@ body {
 
 .team-list .team-profiles-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 1140px; }
   .team-list .team-profiles-container .team-profile {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -342,7 +352,7 @@ body {
         transition: 0.3s ease-out; }
         .team-list .team-profiles-container .team-profile .team-profile-image .team-profile-hover .team-profile-hover-content {
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           align-items: center;
           flex-direction: column;
           justify-content: center;
@@ -379,7 +389,7 @@ body {
 
 .arrow {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 45px;
   height: 45px;
@@ -397,7 +407,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #1445b3;
   width: 100%;
@@ -420,7 +430,7 @@ header {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 30px;
   width: 350px; }
@@ -458,7 +468,7 @@ header {
 
 .testimonials {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -485,7 +495,7 @@ header {
 
 .testimonials-text {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 600px; }
@@ -567,7 +577,7 @@ header {
 .slider__contents {
   width: 700px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-bottom: 30px; }
   .slider__contents h3 {
@@ -605,7 +615,7 @@ header {
     width: 600px;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column; }
   .slider__caption {
@@ -620,7 +630,7 @@ header {
 
 .our-clients {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   margin: 0;
@@ -630,7 +640,7 @@ header {
   box-shadow: inset 0px 0px 20px 1px rgba(0, 0, 0, 0.1); }
   .our-clients-text {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column; }
   .our-clients h2 {
@@ -648,7 +658,7 @@ header {
 
 .clients {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   width: 1104px;
@@ -661,7 +671,7 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column; }
   .clients img {

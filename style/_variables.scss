@@ -28,40 +28,40 @@ $secondary-color: #007bff;
 $text-color: #283d50;
 
 @mixin flex-row() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @mixin flex-column() {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 @mixin title-font {
-    font-family: "Montserrat", sans-serif;
-    color: #283d50;
+  font-family: "Montserrat", sans-serif;
+  color: #283d50;
 }
 
 @mixin subtitle-font {
-    font-family: "Open Sans", sans-serif;
-    color: #556877;
+  font-family: "Open Sans", sans-serif;
+  color: #556877;
 }
 
 @mixin portfolio-card {
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 6px;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 30px;
-    height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  height: 250px;
 }
 
 %icons {
-    font-size: 48px;
-    color: $highlight-icons-color;
+  font-size: 48px;
+  color: $highlight-icons-color;
 }
