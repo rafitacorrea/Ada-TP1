@@ -174,9 +174,6 @@
     color: $text-color;
   }
 
-  & .contact-us-form {
-  }
-
   & .form-row {
     @include flex-row();
     margin-right: 75px;
