@@ -648,6 +648,10 @@ body {
     max-height: 26px;
     float: left; }
 
+@media (max-width: 768px) {
+  .nav-container {
+    display: none; } }
+
 .header-container {
   display: flex;
   justify-content: space-between;
