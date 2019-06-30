@@ -5,6 +5,164 @@
   font-size: 48px;
   color: #bfddfe; }
 
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ecf5ff;
+  box-shadow: inset 0px 10px 10px -8px rgba(0, 0, 0, 0.43); }
+  .services .services-title {
+    font: 100% "Montserrat", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%; }
+  .services .services-description {
+    font-size: 15px;
+    font: 95% "Open Sans", sans-serif;
+    text-align: center;
+    color: #556877;
+    width: 50%;
+    line-height: 1.6;
+    margin-bottom: 2%; }
+
+.services-cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 200px 40px 200px; }
+  .services-cards-container .services-card {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 10px 40px 10px;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    transition: transform 0.8s;
+    overflow: hidden;
+    width: 35%; }
+  .services-cards-container .services-card:hover {
+    transform: translate(0px, -7px); }
+  .services-cards-container .services-icon-container {
+    box-sizing: border-box;
+    font-size: 60px;
+    left: -15px;
+    top: calc(50% - 32px);
+    position: absolute; }
+  .services-cards-container #analytics {
+    color: #ff4995; }
+  .services-cards-container .bookmark {
+    color: #e4ae1c; }
+  .services-cards-container .paper {
+    color: #00b1b1; }
+  .services-cards-container .speedometer {
+    color: #01ad09; }
+  .services-cards-container .globe {
+    color: #f3e521; }
+  .services-cards-container .time {
+    color: #0067d5; }
+  .services-cards-container .card-title {
+    font: 100% "Montserrat", sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-left: 40px; }
+  .services-cards-container .card-title:link {
+    color: #000;
+    text-decoration: none; }
+  .services-cards-container .card-title:visited {
+    color: #000; }
+  .services-cards-container .card-title:hover {
+    color: #007bff; }
+  .services-cards-container .card-description {
+    font: 95% "Open Sans", sans-serif;
+    color: #283d50;
+    line-height: 1.6;
+    margin-left: 40px;
+    margin-bottom: 0; }
+
+.contact-us-main-container {
+  padding: 40px 0; }
+  .contact-us-main-container .contact-us-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: normal;
+    color: #283d50; }
+  .contact-us-main-container .contact-us-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .contact-us-main-container .map-container {
+    display: flex;
+    width: 50%;
+    margin-left: 1%; }
+  .contact-us-main-container .contact-us-form-container {
+    width: 50%; }
+  .contact-us-main-container .contact-us-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%; }
+  .contact-us-main-container .contact-icon-container {
+    width: 25px;
+    height: 25px; }
+  .contact-us-main-container .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .contact-us-main-container .contact-info-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #283d50; }
+  .contact-us-main-container .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 75px; }
+  .contact-us-main-container .top-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 2%;
+    padding: 1%;
+    width: 50%;
+    color: #556877; }
+  .contact-us-main-container .input-box {
+    font-size: 14px;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: #556877; }
+  .contact-us-main-container .message-input-box {
+    font-size: 14px;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: #556877; }
+  .contact-us-main-container .form-button {
+    background-color: #007bff;
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    padding: 8px 30px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0 40%; }
+  .contact-us-main-container .form-button:hover {
+    background-color: #0067d5; }
+
 html,
 body {
   padding: 0;

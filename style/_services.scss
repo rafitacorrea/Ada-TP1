@@ -1,0 +1,225 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@mixin cards-divs {
+  height: 500px;
+  width: 300px;
+}
+
+@mixin services-icon-container {
+  height: 200px;
+  width: 200px;
+}
+
+@mixin services-img {
+  height: auto;
+  width: 100%;
+}
+
+.services {
+  @include flex-column();
+  background-color: $body-background-color;
+  box-shadow: inset 0px 10px 10px -8px rgba(0, 0, 0, 0.43);
+
+  & .services-title {
+    font: 100% "Montserrat", sans-serif;
+    font-size: $title-title-size;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+  }
+
+  & .services-description {
+    font-size: $subtitle-font-size;
+    font: 95% "Open Sans", sans-serif;
+    text-align: center;
+    color: $subtitle-color;
+    width: 50%;
+    line-height: 1.6;
+    margin-bottom: 2%;
+  }
+}
+
+.services-cards-container {
+  @include flex-row();
+  flex-wrap: wrap;
+  padding: 60px 200px 40px 200px;
+
+  & .services-card {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 0 10px 40px 10px;
+    line-height: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    transition: transform 0.8s;
+    overflow: hidden;
+    width: 35%;
+  }
+
+  & .services-card:hover {
+    transform: translate(0px, -7px);
+  }
+
+  & .services-icon-container {
+    box-sizing: border-box;
+    font-size: 60px;
+    left: -15px;
+    top: calc(50% - 32px);
+    position: absolute;
+  }
+
+  & #analytics {
+    color: #ff4995;
+  }
+
+  & .bookmark {
+    color: #e4ae1c;
+  }
+
+  & .paper {
+    color: #00b1b1;
+  }
+
+  & .speedometer {
+    color: #01ad09;
+  }
+
+  & .globe {
+    color: #f3e521;
+  }
+
+  & .time {
+    color: #0067d5;
+  }
+
+  & .card-title {
+    font: 100% "Montserrat", sans-serif;
+    font-size: 110%;
+    font-weight: bold;
+    margin-left: 40px;
+  }
+
+  & .card-title:link {
+    color: #000;
+    text-decoration: none;
+  }
+
+  & .card-title:visited {
+    color: #000;
+  }
+
+  & .card-title:hover {
+    color: $active-link-color;
+  }
+
+  & .card-description {
+    font: 95% "Open Sans", sans-serif;
+    color: $text-color;
+    line-height: 1.6;
+    margin-left: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.contact-us-main-container {
+  padding: 40px 0;
+
+  & .contact-us-title {
+    font-family: $main-font;
+    font-size: $title-title-size;
+    text-align: center;
+    font-weight: normal;
+    color: $text-color;
+  }
+
+  & .contact-us-row-container {
+    @include flex-row();
+  }
+
+  & .map-container {
+    display: flex;
+    width: 50%;
+    margin-left: 1%;
+  }
+
+  & .contact-us-form-container {
+    width: 50%;
+  }
+
+  & .contact-us-info-container {
+    @include flex-row();
+    margin-bottom: 3%;
+  }
+
+  & .contact-icon-container {
+    width: 25px;
+    height: 25px;
+  }
+
+  & .contact-info {
+    @include flex-row();
+  }
+
+  & .contact-info-text {
+    font-family: $secondary-font;
+    font-size: $subtitle-font-size;
+    color: $text-color;
+  }
+
+  & .form-row {
+    @include flex-row();
+    margin-right: 75px;
+  }
+
+  & .top-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: $item-title-description;
+    margin-bottom: 2%;
+    // margin-right: 65px;
+    padding: 1%;
+    width: 50%;
+    color: $subtitle-color;
+    // margin: 15px 5px;
+  }
+
+  & .input-box {
+    font-size: $item-title-description;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: $subtitle-color;
+  }
+
+  & .message-input-box {
+    font-size: $item-title-description;
+    margin: 15px 5px;
+    padding: 1%;
+    width: 90%;
+    color: $subtitle-color;
+  }
+
+  & .form-button {
+    background-color: $secondary-color;
+    border-radius: 20px;
+    border: 0;
+    color: $highlighted-font-color;
+    padding: 8px 30px;
+    transition: 0.3s;
+    font-size: $item-title-size;
+    font-weight: lighter;
+    margin: 0 40%;
+  }
+
+  & .form-button:hover {
+    background-color: #0067d5;
+  }
+}
