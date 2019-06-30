@@ -1,70 +1,40 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap');
 
-
-$title-font: "Montserrat", sans-serif;
+$title-font: 'Montserrat', sans-serif;
 $title-title-size: 36px;
-$title-color: #283d50;
+$title-color: #283D50;
 $item-title-size: 18px;
 $item-title-description: 14px;
-$item-title-color: #283d50;
+$item-title-color: #283D50;
 $item-description-color: #444;
-$subtitle-font: "Open Sans", sans-serif;
+$subtitle-font: 'Open Sans', sans-serif;
 $subtitle-font-size: 15px;
 $subtitle-color: #556877;
 $body-background-color: #ecf5ff;
-$header-background-color: #1445b3;
+$header-background-color: #1445B3;
 $active-link-color: #007bff;
-$highlight-card-color-active: #003b7a;
-$portfolio-hover: rgba(0, 59, 122, 0.5);
-$highlight-card-color: #00458f;
-$highlight-section-color: #004a99;
-$highlighted-font-color: #fff;
-$highlight-icons-color: #bfddfe;
-$counter-font-size: 48px;
-
-$main-font: "Montserrat", sans-serif;
-$secondary-font: "Open Sans", sans-serif;
-$main-color: #1445b3;
-$secondary-color: #007bff;
-$text-color: #283d50;
+$highlight-card-color: #003B7A;
+$highlight-section-color: #004A99;
 
 @mixin flex-row() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @mixin flex-column() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
-$text-color:#283d50;
 
 @mixin title-font {
-  font-family: "Montserrat", sans-serif;
-  color: #283d50;
+    font-family: 'Montserrat', sans-serif;
+    color: #283D50;
 }
 
 @mixin subtitle-font {
-  font-family: "Open Sans", sans-serif;
-  color: #556877;
-}
-
-@mixin portfolio-card {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 6px;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 30px;
-  height: 250px;
-}
-
-%icons {
-  font-size: 48px;
-  color: $highlight-icons-color;
+    font-family: 'Open Sans', sans-serif;
+    color: #556877;
 }
