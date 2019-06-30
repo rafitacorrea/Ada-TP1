@@ -75,6 +75,10 @@
               background: #fff;
               background-size: cover;
               padding: 0 0 30px 0;
+              &:hover {
+                background: $secondary-color;
+                color: #fff;
+              }
               .icon {
                 float: left;
                 background: #fff;
@@ -99,10 +103,7 @@
                 border-radius: 50%;
                 border: 2px solid #007bff;
                 transition: all 0.3s ease-in-out;
-                &:hover {
-                  background: $secondary-color;
-                  color: #fff;
-                }
+
                 i {
                   color: #007bff;
                   font-size: 24px;
