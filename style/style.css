@@ -5,6 +5,11 @@
   font-size: 48px;
   color: #bfddfe; }
 
+*,
+::after,
+::before {
+  box-sizing: border-box; }
+
 .services {
   display: flex;
   justify-content: space-around;
@@ -23,7 +28,7 @@
     font: 95% "Open Sans", sans-serif;
     text-align: center;
     color: #556877;
-    width: 30%;
+    width: 50%;
     line-height: 1.6;
     margin-bottom: 2%; }
 
@@ -32,26 +37,46 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 50%;
-  padding-bottom: 2%; }
+  padding: 60px 200px 40px 200px; }
   .services-cards-container .services-card {
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
     background-color: #ffffff;
-    max-width: 37%;
-    padding: 2.5%;
-    margin-bottom: 5%;
+    padding: 30px;
+    margin: 0 10px 40px 10px;
     line-height: 1;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    transition: transform 0.8s; }
+    transition: transform 0.8s;
+    overflow: hidden;
+    width: 35%; }
   .services-cards-container .services-card:hover {
-    transform: translate(0px, -10px); }
+    transform: translate(0px, -7px); }
+  .services-cards-container .services-icon-container {
+    box-sizing: border-box;
+    font-size: 60px;
+    left: -15px;
+    top: calc(50% - 32px);
+    position: absolute; }
+  .services-cards-container #analytics {
+    color: #ff4995; }
+  .services-cards-container .bookmark {
+    color: #e4ae1c; }
+  .services-cards-container .paper {
+    color: #00b1b1; }
+  .services-cards-container .speedometer {
+    color: #01ad09; }
+  .services-cards-container .globe {
+    color: #f3e521; }
+  .services-cards-container .time {
+    color: #0067d5; }
   .services-cards-container .card-title {
     font: 100% "Montserrat", sans-serif;
     font-size: 110%;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-left: 40px; }
   .services-cards-container .card-title:link {
     color: #000;
     text-decoration: none; }
@@ -62,7 +87,9 @@
   .services-cards-container .card-description {
     font: 95% "Open Sans", sans-serif;
     color: #283d50;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin-left: 40px;
+    margin-bottom: 0; }
 
 .contact-us-main-container {
   padding: 40px 0; }
