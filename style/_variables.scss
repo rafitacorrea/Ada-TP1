@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,700&display=swap");
 
 $title-font: "Montserrat", sans-serif;
 $title-title-size: 36px;
@@ -41,7 +40,7 @@ $text-color: #283d50;
   align-items: center;
   flex-direction: column;
 }
-$text-color:#283d50;
+$text-color: #283d50;
 
 @mixin title-font {
   font-family: "Montserrat", sans-serif;
